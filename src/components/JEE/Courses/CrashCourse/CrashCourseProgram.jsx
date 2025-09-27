@@ -1,6 +1,6 @@
 import React from "react";
 import top from "../../../../assets/jee-images/courses/crashcourses/top.png";
-import phone from "../../../../assets/jee-images/courses/vector.png";
+import phone from "../../../../assets/jee-images/courses/Vector.png";
 import { FaStar } from "react-icons/fa";
 
 export default function CrashCourseProgram() {

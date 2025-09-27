@@ -1,6 +1,6 @@
 import React from "react";
 import top from "../../../../assets/jee-images/courses/classXII/top.png";
-import phone from "../../../../assets/jee-images/courses/vector.png";
+import phone from "../../../../assets/jee-images/courses/Vector.png";
 
 export default function ClassXIIPlusProgram() {
   return (
