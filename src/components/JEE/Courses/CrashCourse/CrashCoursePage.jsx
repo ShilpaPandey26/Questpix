@@ -4,7 +4,7 @@ import CrashCourseProgramDetails from "./CrashCourseProgramDetails";
 import CrashCourseTestimonials from "./CrashCourseTestimonials";
 import CrashCourseFeaturesSection from "./CrashCourseFeaturesSection";
 import CrashCourseDream from "./CrashCourseDream";
-import CrashCourseBreakdown from "./CrashCourseBreakdown";
+import CrashCourseBreakDown from "./CrashCourseBreakDown";
 import CrashCourseFAQSection from "./CrashCourseFAQSection";
 import CrashCourseFirstStep from "./CrashCourseFirstStep";
 
@@ -17,7 +17,7 @@ export default function CrashCoursePage() {
         <CrashCourseTestimonials />
         <CrashCourseFeaturesSection />
         <CrashCourseDream />
-        <CrashCourseBreakdown />
+        <CrashCourseBreakDown />
         <CrashCourseFAQSection />
         <CrashCourseFirstStep />
       </div>
