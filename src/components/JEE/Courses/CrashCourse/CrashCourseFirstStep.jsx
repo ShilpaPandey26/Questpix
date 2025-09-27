@@ -1,6 +1,6 @@
 import React from "react";
 import first from "../../../../assets/jee-images/courses/first.png";
-import phone from "../../../../assets/jee-images/courses/vector.png";
+import phone from "../../../../assets/jee-images/courses/Vector.png";
 
 export default function CrashCourseFirstStep() {
   return (
