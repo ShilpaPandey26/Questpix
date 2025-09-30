@@ -86,7 +86,7 @@ const courses = [
    
     },
     {
-        class: "Class 8",
+        class: "Class 6",
       title: "Science Accelerator Online Course",
       description:
         "Build a strong and lasting understanding of fundamental Science concepts (Physics, Chemistry, Biology) in Class 6.",
