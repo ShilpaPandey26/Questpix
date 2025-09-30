@@ -260,7 +260,7 @@ function MobileView({ mobileMenu, mobileOpen, setMobileOpen, handleNavigate }) {
                 }`}
               >
                 <ul className="px-6 py-2 space-y-2 text-sm border-t border-gray-700">
-                  <li onClick={() => handleNavigate("/SixToTen/CoursesClass6")}>Class 6</li>
+                  <li onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 6</li>
                   <li onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 7</li>
                   <li onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 8</li>
                   <li onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 9</li>
