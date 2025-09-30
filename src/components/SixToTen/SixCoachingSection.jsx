@@ -6,7 +6,7 @@ import boyimg from "../../assets/SixToTen/boy.png"
 export default function SixCoachingSection() {
   return (
     <div className="container">
-      <div className="container mx-auto px-4 pt-10   sm:pt-20  text-white flex flex-col lg:flex-row items-center md:justify-between gap-10">
+      <div className="container mx-auto px-4 pt-10  text-white flex flex-col lg:flex-row items-center md:justify-between gap-10">
         {/* left */}
         <div className="lg:w-1/2 text-center md:text-left ">
           <h2 className="text-2xl sm:text-4xl md:text-4xl font-bold ">

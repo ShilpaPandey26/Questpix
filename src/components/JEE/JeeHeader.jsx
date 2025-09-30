@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Menu, X, ChevronDown, ChevronUp } from "lucide-react"; // icons
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react"; 
 import logo from "../../assets/head-logo.svg";
 
 export default function JeeHeader() {

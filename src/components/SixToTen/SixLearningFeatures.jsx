@@ -49,7 +49,7 @@ const features = [
 export default function SixLearningFeatures() {
   return (
     <div
-      className=" mt-30 pt-40 pb-40"
+      className=" pt-40 pb-40"
       style={{
         backgroundImage: `url(${bc})`,
         backgroundSize: "cover",

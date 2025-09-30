@@ -22,13 +22,9 @@ export default function SixToTenPage() {
       </div>
 
       <SixWhyChooseQuestPix />
-      <div className="w-full overflow-hidden">
-        <div className="container mx-auto  px-4 sm:px-10 lg:px-8 py-3 sm:py-6">
-          <SixTestimonials />
-        </div>
-      </div>
-
+      <SixTestimonials />
       <SixLearningFeatures />
+
       <div className="w-full overflow-hidden">
         <div className="container mx-auto  px-4 sm:px-10 lg:px-8 py-3 sm:py-6">
           <SixCoachingSection />

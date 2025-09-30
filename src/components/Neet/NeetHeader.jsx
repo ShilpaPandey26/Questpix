@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Menu, X, ChevronDown, ChevronUp } from "lucide-react"; // icons
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react"; 
 import logo from "../../assets/head-logo.svg";
 
 export default function NeetHeader() {
@@ -57,18 +57,30 @@ export default function NeetHeader() {
               Courses
             </button>
             {openMenu === "courses" && (
-              <div className="absolute top-10 left-0 mt-2 bg-[#1b2b3e] rounded-lg py-4 px-6 w-52 z-50">
+              <div className="absolute top-10 left-0 mt-2 bg-[#1f2f45] rounded-lg py-4 px-6 w-52 z-50">
                 <ul className="space-y-3 text-[14px] cursor-pointer">
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
+                  <li
+                    onClick={() => handleNavigate("/Neet/Courses/ClassXI")}
+                    className="cursor-pointer hover:text-[#2fc18b]"
+                  >
                     Class XI
                   </li>
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
+                  <li
+                    onClick={() => handleNavigate("/Neet/Courses/ClassXII")}
+                    className="cursor-pointer hover:text-[#2fc18b]"
+                  >
                     Class XII
                   </li>
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
+                  <li
+                    onClick={() => handleNavigate("/Neet/Courses/ClassXIIPlus")}
+                    className="cursor-pointer hover:text-[#2fc18b]"
+                  >
                     Class XII+
                   </li>
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
+                  <li
+                    onClick={() => handleNavigate("/Neet/Courses/CrashCourse")}
+                    className="cursor-pointer hover:text-[#2fc18b]"
+                  >
                     Crash Course
                   </li>
                 </ul>
@@ -87,7 +99,7 @@ export default function NeetHeader() {
               Test Series
             </button>
             {openMenu === "test-series" && (
-              <div className="absolute top-10 left-0 mt-2 bg-[#1b2b3e] rounded-lg py-4 px-6 w-60 z-50">
+              <div className="absolute top-10 left-0 mt-2 bg-[#1f2f45] rounded-lg py-4 px-6 w-60 z-50">
                 <ul className="space-y-3 text-[14px] cursor-pointer">
                   <li className="hover:text-[#2fc18b] cursor-pointer">
                     NEET UG TEST SERIES
@@ -137,7 +149,7 @@ export default function NeetHeader() {
               Study Material
             </button>
             {openMenu === "study-material" && (
-              <div className="absolute top-10 left-0 mt-2 bg-[#1b2b3e] rounded-lg py-4 px-6 w-64 z-50">
+              <div className="absolute top-10 left-0 mt-2 bg-[#1f2f45] rounded-lg py-4 px-6 w-64 z-50">
                 <ul className="space-y-4 text-[14px] cursor-pointer">
                   <li className="hover:text-[#2fc18b] cursor-pointer">
                     NEET UG Paper PDFs(Year-Wise)
@@ -184,7 +196,7 @@ export default function NeetHeader() {
               About Us
             </button>
             {openMenu === "about-us" && (
-              <div className="absolute top-10 left-0 mt-2 bg-[#1b2b3e] rounded-lg py-4 px-6 w-52 z-50">
+              <div className="absolute top-10 left-0 mt-2 bg-[#1f2f45] rounded-lg py-4 px-6 w-52 z-50">
                 <ul className="space-y-3 text-[14px] cursor-pointer">
                   <li
                     className="hover:text-[#2fc18b] cursor-pointer"
@@ -270,25 +282,25 @@ function MobileView({ mobileMenu, mobileOpen, setMobileOpen, handleNavigate }) {
               >
                 <ul className="px-6 py-2 space-y-2 text-sm border-t border-gray-700">
                   <li
-                    onClick={() => handleNavigate("/Neet/ClassXI")}
+                    onClick={() => handleNavigate("/Neet/Courses/ClassXI")}
                     className="cursor-pointer hover:text-[#2fc18b]"
                   >
                     Class XI
                   </li>
                   <li
-                    onClick={() => handleNavigate("/Neet/ClassXII")}
+                    onClick={() => handleNavigate("/Neet/Courses/ClassXII")}
                     className="cursor-pointer hover:text-[#2fc18b]"
                   >
                     Class XII
                   </li>
                   <li
-                    onClick={() => handleNavigate("/Neet/ClassXIIPlus")}
+                    onClick={() => handleNavigate("/Neet/Courses/ClassXIIPlus")}
                     className="cursor-pointer hover:text-[#2fc18b]"
                   >
                     Class XII+
                   </li>
                   <li
-                    onClick={() => handleNavigate("/Neet/CrashCourse")}
+                    onClick={() => handleNavigate("/Neet/Courses/CrashCourse")}
                     className="cursor-pointer hover:text-[#2fc18b]"
                   >
                     Crash Course

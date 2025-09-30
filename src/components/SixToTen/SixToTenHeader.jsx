@@ -58,13 +58,13 @@ export default function JeeHeader() {
               Courses
             </button>
             {openMenu === "courses" && (
-              <div className="absolute top-10 left-0 mt-2 bg-[#1b2b3e] rounded-lg py-4 px-6 w-52 z-50">
+              <div className="absolute top-10 left-0 mt-2 bg-[#1f2f45] rounded-lg py-4 px-6 w-52 z-50">
                 <ul className="space-y-3 text-[14px] cursor-pointer">
-                  <li onClick={() => handleNavigate("/SixToTen/Class6")}>Class 6</li>
-                  <li onClick={() => handleNavigate("/SixToTen/Class7")}>Class 7</li>
-                  <li onClick={() => handleNavigate("/SixToTen/Class8")}>Class 8</li>
-                  <li onClick={() => handleNavigate("/SixToTen/Class9")}>Class 9</li>
-                  <li onClick={() => handleNavigate("/SixToTen/Class10")}>Class 10</li>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 6</li>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 7</li>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 8</li>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 9</li>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 10</li>
                 </ul>
               </div>
             )}
@@ -89,30 +89,30 @@ export default function JeeHeader() {
               Target Exam
             </button>
             {openMenu === "target-exam" && (
-              <div className="absolute top-10 left-0 mt-2 bg-[#1b2b3e] rounded-lg py-4 px-6 w-64 z-50">
+              <div className="absolute top-10 left-0 mt-2 bg-[#1f2f45] rounded-lg py-4 px-6 w-64 z-50">
                 <ul className="space-y-3 text-[14px] cursor-pointer">
-                  <li onClick={() => handleNavigate("/Exam/NTSE")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/Exam/NTSE")}>
                     National Talent Search Examination
                   </li>
-                  <li onClick={() => handleNavigate("/Exam/NSTSE")}>
+                  <li    className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/Exam/NSTSE")}>
                     National Level Science Talent Search Examination
                   </li>
-                  <li onClick={() => handleNavigate("/Exam/NSO")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]"  onClick={() => handleNavigate("/Exam/NSO")}>
                     National Science Olympiad
                   </li>
-                  <li onClick={() => handleNavigate("/Exam/IMO")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/Exam/IMO")}>
                     International Mathematics Olympiad
                   </li>
-                  <li onClick={() => handleNavigate("/Exam/IEO")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]"  onClick={() => handleNavigate("/Exam/IEO")}>
                     International English Olympiad
                   </li>
-                  <li onClick={() => handleNavigate("/Exam/IGKO")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/Exam/IGKO")}>
                     International General Knowledge Olympiad
                   </li>
-                  <li onClick={() => handleNavigate("/Exam/ISSO")}>
+                  <li  className="cursor-pointer hover:text-[#2fc18b]"  onClick={() => handleNavigate("/Exam/ISSO")}>
                     International Social Studies Olympiad
                   </li>
-                  <li onClick={() => handleNavigate("/Exam/UCO")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/Exam/UCO")}>
                     Unified Cyber Olympiad
                   </li>
                 </ul>
@@ -131,33 +131,33 @@ export default function JeeHeader() {
               Study Material
             </button>
             {openMenu === "study-material" && (
-              <div className="absolute top-10 left-0 mt-2 bg-[#1b2b3e] rounded-lg py-4 px-6 w-64 z-50">
+              <div className="absolute top-10 left-0 mt-2 bg-[#1f2f45] rounded-lg py-4 px-6 w-64 z-50">
                 <ul className="space-y-4 text-[14px] cursor-pointer">
-                  <li onClick={() => handleNavigate("/Material/Maths")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/Material/Maths")}>
                     NCERT Maths Solution PDFs (Year-Wise)
                   </li>
-                  <li onClick={() => handleNavigate("/Material/Science")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/Material/Science")}>
                     NCERT Science Solution PDFs (Year-Wise)
                   </li>
-                  <li onClick={() => handleNavigate("/Material/SST")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/Material/SST")}>
                     NCERT Social Studies Solution (Class-Wise)
                   </li>
-                  <li onClick={() => handleNavigate("/Material/English")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]"  onClick={() => handleNavigate("/Material/English")}>
                     NCERT English Solutions (Class-Wise)
                   </li>
-                  <li onClick={() => handleNavigate("/Papers/Class6")}>
+                  <li  className="cursor-pointer hover:text-[#2fc18b]"  onClick={() => handleNavigate("/Papers/Class6")}>
                     Sample Papers Class 6
                   </li>
-                  <li onClick={() => handleNavigate("/Papers/Class7")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/Papers/Class7")}>
                     Sample Papers Class 7
                   </li>
-                  <li onClick={() => handleNavigate("/Papers/Class8")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]"  onClick={() => handleNavigate("/Papers/Class8")}>
                     Sample Papers Class 8
                   </li>
-                  <li onClick={() => handleNavigate("/Papers/Class9")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/Papers/Class9")}>
                     Sample Papers Class 9
                   </li>
-                  <li onClick={() => handleNavigate("/Papers/Class10")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/Papers/Class10")}>
                     Sample Papers Class 10
                   </li>
                 </ul>
@@ -184,15 +184,15 @@ export default function JeeHeader() {
               About Us
             </button>
             {openMenu === "about-us" && (
-              <div className="absolute top-10 left-0 mt-2 bg-[#1b2b3e] rounded-lg py-4 px-6 w-52 z-50">
+              <div className="absolute top-10 left-0 mt-2 bg-[#1f2f45] rounded-lg py-4 px-6 w-52 z-50">
                 <ul className="space-y-3 text-[14px] cursor-pointer">
-                  <li onClick={() => handleNavigate("/SixToTen/WhoWeare")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/SixToTen/WhoWeare")}>
                     Who We Are?
                   </li>
-                  <li onClick={() => handleNavigate("/SixToTen/ContactUs")}>
+                  <li   className="cursor-pointer hover:text-[#2fc18b]" onClick={() => handleNavigate("/SixToTen/ContactUs")}>
                     Contact Us
                   </li>
-                  <li onClick={() => handleNavigate("/SixToTen/Career")}>
+                  <li  className="cursor-pointer hover:text-[#2fc18b]"  onClick={() => handleNavigate("/SixToTen/Career")}>
                     Careers
                   </li>
                 </ul>
@@ -260,11 +260,11 @@ function MobileView({ mobileMenu, mobileOpen, setMobileOpen, handleNavigate }) {
                 }`}
               >
                 <ul className="px-6 py-2 space-y-2 text-sm border-t border-gray-700">
-                  <li onClick={() => handleNavigate("/SixToTen/Class6")}>Class 6</li>
-                  <li onClick={() => handleNavigate("/SixToTen/Class7")}>Class 7</li>
-                  <li onClick={() => handleNavigate("/SixToTen/Class8")}>Class 8</li>
-                  <li onClick={() => handleNavigate("/SixToTen/Class9")}>Class 9</li>
-                  <li onClick={() => handleNavigate("/SixToTen/Class10")}>Class 10</li>
+                  <li onClick={() => handleNavigate("/SixToTen/CoursesClass6")}>Class 6</li>
+                  <li onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 7</li>
+                  <li onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 8</li>
+                  <li onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 9</li>
+                  <li onClick={() => handleNavigate("/SixToTen/Courses/Class6")}>Class 10</li>
                 </ul>
               </div>
             </div>
