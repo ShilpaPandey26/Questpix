@@ -130,7 +130,8 @@ export default function NeetHeader() {
             {openMenu === "target-exam" && (
               <div className="absolute top-10 left-0 mt-2 bg-[#1b2b3e] rounded-lg py-4 px-6 w-52 z-50">
                 <ul className="space-y-3 text-[14px] cursor-pointer">
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
+                  <li onClick={() => handleNavigate("/Neet/TargetExam/NeetUG")} 
+                  className="hover:text-[#2fc18b] cursor-pointer">
                     NEET UG
                   </li>
                 </ul>
@@ -370,7 +371,7 @@ function MobileView({ mobileMenu, mobileOpen, setMobileOpen, handleNavigate }) {
               >
                 <ul className="px-6 py-2 space-y-2 text-sm border-t border-gray-700">
                   <li
-                    onClick={() => handleNavigate("/Neet/MainExam")}
+                    onClick={() => handleNavigate("/Neet/TargetExam/NeetUG")}
                     className="cursor-pointer hover:text-[#2fc18b]"
                   >
                     NEET UG
