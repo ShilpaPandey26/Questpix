@@ -6,27 +6,28 @@ import {
   faLinkedinIn,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-
 import {
   faEnvelope,
   faPhone,
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { Link } from "react-router-dom"; // ✅ Import here only once at the top
 import gpbtn from "../assets/gpbtn.png";
 import appstore from "../assets/appstore.png";
 
 export default function Footer() {
   return (
     <div className="bg-[#080e16] text-white">
-      <div className="container mx-auto px-4  flex flex-col lg:flex-row justify-between gap-10 lg:gap-0 ">
+      <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between gap-10 lg:gap-0">
         {/* Main Footer */}
         <div className="w-full mx-auto px-4 py-10 flex flex-col lg:flex-row justify-between gap-10 lg:gap-0">
+
           {/* Left Section */}
-          <div className="flex flex-col items-start gap-5 w-full lg:w-[40%] ">
+          <div className="flex flex-col items-start gap-5 w-full lg:w-[40%]">
             <img
               src="https://dev.questpix.com/assets/images/logo.svg"
               className="h-20"
+              alt="QuestPix Logo"
             />
             <p className="text-[rgba(255,255,255,0.6)] text-sm sm:text-base font-medium w-full lg:w-[85%]">
               We are a team of passionate faculties, technologists, and
@@ -41,27 +42,28 @@ export default function Footer() {
                 {
                   icon: faFacebookF,
                   link: "https://www.facebook.com/questpixstudyapp/",
-                  hoverColor: "hover:bg-[#1877F2]", 
+                  hoverColor: "hover:bg-[#1877F2]",
                 },
                 {
                   icon: faInstagram,
                   link: "https://www.instagram.com/questpixstudyapp/",
-                  hoverColor: "hover:bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF]",
+                  hoverColor:
+                    "hover:bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF]",
                 },
                 {
                   icon: faTwitter,
                   link: "https://x.com/questpix/",
-                  hoverColor: "hover:bg-[#1DA1F2]", 
+                  hoverColor: "hover:bg-[#1DA1F2]",
                 },
                 {
                   icon: faLinkedinIn,
                   link: "https://www.linkedin.com/company/questpixapp/",
-                  hoverColor: "hover:bg-[#0077B5]", 
+                  hoverColor: "hover:bg-[#0077B5]",
                 },
                 {
                   icon: faYoutube,
                   link: "https://www.youtube.com/@questpixjee-s6c",
-                  hoverColor: "hover:bg-[#FF0000]", 
+                  hoverColor: "hover:bg-[#FF0000]",
                 },
               ].map((item, index) => (
                 <a
@@ -75,8 +77,6 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-
-
           </div>
 
           {/* Middle Section */}
@@ -96,27 +96,25 @@ export default function Footer() {
                 { name: "Privacy Policy", link: "/privacy-policy" },
               ].map((item, index) => (
                 <li key={index}>
-                  <a
-                    href={item.link}
-
+                  <Link
+                    to={item.link}
                     className="hover:text-[#2FC18B] transition-colors duration-200"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
-
           </div>
 
           {/* Right Section */}
           <div className="flex flex-col w-full md:w-[60%] lg:w-[33.33%]">
             <h3 className="text-lg pb-5 font-extrabold">Contact Info</h3>
-            <ul className="text-[16px] text-[rgba(255,255,255,0.6)] space-y-3 ">
+            <ul className="text-[16px] text-[rgba(255,255,255,0.6)] space-y-3">
               <li className="flex items-center gap-4 hover:text-[#2FC18B] cursor-pointer">
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="mt-1 text-[rgba(255,255,255,0.6)] "
+                  className="mt-1 text-[rgba(255,255,255,0.6)]"
                 />
                 questpixedu@gmail.com
               </li>
@@ -127,7 +125,7 @@ export default function Footer() {
                 />
                 +91 95216 87733
               </li>
-              <li className="flex items-start gap-4 ">
+              <li className="flex items-start gap-4">
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
                   className="mt-1 text-[rgba(255,255,255,0.6)]"
