@@ -1,3 +1,4 @@
+
 import { Routes, Route, useLocation } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import LandingPage from "./components/Landing/LandingPage";
@@ -17,9 +18,13 @@ import ClassXIPage from "./components/JEE/Courses/ClassXI/ClassXIPage";
 import ClassXIIPage from "./components/JEE/Courses/ClassXII/ClassXIIPage";
 import ClassXIIPlusPage from "./components/JEE/Courses/ClassXIIPlus/ClassXIIPlusPage";
 import CrashCoursePage from "./components/JEE/Courses/CrashCourse/CrashCoursePage";
-//target exam
+//Target Exam
 import JeeMainPage from "./components/JEE/TargetExam/JeeMain/JeeMainPage";
 import JeeAdvancedPage from "./components/JEE/TargetExam/JeeAdvanced/JeeAdvancedPage";
+
+//Test series
+import JeeMainTestSeriesPage from "./components/JEE/TestSeries/JeeMain/JeeMainTestSeriesPage";
+import JeeAdvancedTestSeriesPage from "./components/JEE/TestSeries/JeeAdvanced/JeeAdvancedTestSeriesPage";
 
 import NeetWhoWeare from "./components/Neet/NeetWhoWeare";
 import NeetContactUs from "./components/Neet/NeetContactUs";
@@ -31,7 +36,7 @@ import NeetClassXIPage from "./components/Neet/Courses/ClassXI/ClassXIPage";
 import NeetClassXIIPage from "./components/Neet/Courses/ClassXII/ClassXIIPage";
 import NeetClassXIIPlusPage from "./components/Neet/Courses/ClassXIIPlus/ClassXIIPlusPage";
 import NeetCrashCoursePage from "./components/Neet/Courses/CrashCourse/CrashCoursePage";
-//target exam
+//TargetExam
 import NeetUGPage from "./components/Neet/TargetExam/NeetUGPage";
 
 
@@ -98,6 +103,8 @@ function App() {
         <Route path="/Jee/Courses/CrashCourse" element={<CrashCoursePage />} />
         <Route path="/Jee/TargetExam/JeeMain" element={<JeeMainPage />} />
         <Route path="/Jee/TargetExam/JeeAdvanced" element={<JeeAdvancedPage />} />
+        <Route path="/Jee/TestSeries/JeeMain" element={<JeeMainTestSeriesPage/>} />
+        <Route path="/Jee/TestSeries/JeeAdvanced" element={<JeeAdvancedTestSeriesPage/>} />
 
 
         <Route path="/Neet" element={<NeetPage />} />
@@ -106,13 +113,12 @@ function App() {
         <Route path="/Neet/WhoWeare" element={<NeetWhoWeare />} />
         <Route path="/Neet/ContactUs" element={<NeetContactUs />} />
         <Route path="/Neet/Career" element={<NeetCareer />} />
+
         <Route path="/Neet/Courses/ClassXI" element={<NeetClassXIPage />} />
         <Route path="/Neet/Courses/ClassXII" element={<NeetClassXIIPage />} />
         <Route path="/Neet/Courses/ClassXIIPlus" element={<NeetClassXIIPlusPage />} />
         <Route path="/Neet/Courses/CrashCourse" element={<NeetCrashCoursePage />} />
-         <Route path="/Neet/TargetExam/NeetUG" element={<NeetUGPage/>} />
-
-
+        <Route path="/Neet/TargetExam/NeetUG" element={<NeetUGPage />} />
 
         <Route path="/SixToTen" element={<SixToTenPage />} />
         <Route path="/SixToTen/FreeResources" element={<SixToTenFreeMain />} />

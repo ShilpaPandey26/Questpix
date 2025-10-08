@@ -52,9 +52,8 @@ export default function JeeHeader() {
           <div className="relative dropdown">
             <button
               onClick={() => toggleMenu("courses")}
-              className={`hover:text-[#2fc18b] cursor-pointer ${
-                openMenu === "courses" ? "text-[#2fc18b]" : ""
-              }`}
+              className={`hover:text-[#2fc18b] cursor-pointer ${openMenu === "courses" ? "text-[#2fc18b]" : ""
+                }`}
             >
               Courses
             </button>
@@ -94,19 +93,18 @@ export default function JeeHeader() {
           <div className="relative dropdown">
             <button
               onClick={() => toggleMenu("test-series")}
-              className={`hover:text-[#2fc18b] cursor-pointer ${
-                openMenu === "test-series" ? "text-[#2fc18b]" : ""
-              }`}
+              className={`hover:text-[#2fc18b] cursor-pointer ${openMenu === "test-series" ? "text-[#2fc18b]" : ""
+                }`}
             >
               Test Series
             </button>
             {openMenu === "test-series" && (
               <div className="absolute top-10 left-0 mt-2 bg-[#1f2f45] rounded-lg py-4 px-6 w-60 z-50">
                 <ul className="space-y-3 text-[14px] cursor-pointer">
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
+                  <li onClick={() => handleNavigate("/Jee/TestSeries/JeeMain")} className="hover:text-[#2fc18b] cursor-pointer">
                     JEE Main Test Series
                   </li>
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
+                  <li onClick={() => handleNavigate("/Jee/TestSeries/JeeAdvanced")} className="hover:text-[#2fc18b] cursor-pointer">
                     JEE Advanced Test Series
                   </li>
                 </ul>
@@ -126,19 +124,18 @@ export default function JeeHeader() {
           <div className="relative dropdown">
             <button
               onClick={() => toggleMenu("target-exam")}
-              className={`hover:text-[#2fc18b] cursor-pointer ${
-                openMenu === "target-exam" ? "text-[#2fc18b]" : ""
-              }`}
+              className={`hover:text-[#2fc18b] cursor-pointer ${openMenu === "target-exam" ? "text-[#2fc18b]" : ""
+                }`}
             >
               Target Exam
             </button>
             {openMenu === "target-exam" && (
               <div className="absolute top-10 left-0 mt-2 bg-[#1f2f45] rounded-lg py-4 px-6 w-52 z-50">
                 <ul className="space-y-4 text-[14px] cursor-pointer">
-                  <li  onClick={() => handleNavigate("/Jee/TargetExam/JeeMain")} className="hover:text-[#2fc18b] cursor-pointer">
+                  <li onClick={() => handleNavigate("/Jee/TargetExam/JeeMain")} className="hover:text-[#2fc18b] cursor-pointer">
                     JEE  Main
                   </li>
-                  <li  onClick={() => handleNavigate("/Jee/TargetExam/JeeAdvanced")} className="hover:text-[#2fc18b] cursor-pointer">
+                  <li onClick={() => handleNavigate("/Jee/TargetExam/JeeAdvanced")} className="hover:text-[#2fc18b] cursor-pointer">
                     JEE Advanced
                   </li>
                 </ul>
@@ -150,9 +147,8 @@ export default function JeeHeader() {
           <div className="relative dropdown">
             <button
               onClick={() => toggleMenu("study-material")}
-              className={`hover:text-[#2fc18b] cursor-pointer ${
-                openMenu === "study-material" ? "text-[#2fc18b]" : ""
-              }`}
+              className={`hover:text-[#2fc18b] cursor-pointer ${openMenu === "study-material" ? "text-[#2fc18b]" : ""
+                }`}
             >
               Study Material
             </button>
@@ -200,9 +196,8 @@ export default function JeeHeader() {
           <div className="relative dropdown">
             <button
               onClick={() => toggleMenu("about-us")}
-              className={`hover:text-[#2fc18b] cursor-pointer ${
-                openMenu === "about-us" ? "text-[#2fc18b]" : ""
-              }`}
+              className={`hover:text-[#2fc18b] cursor-pointer ${openMenu === "about-us" ? "text-[#2fc18b]" : ""
+                }`}
             >
               About Us
             </button>
@@ -285,11 +280,10 @@ function MobileView({ mobileMenu, mobileOpen, setMobileOpen, handleNavigate }) {
                 )}
               </button>
               <div
-                className={`transition-all duration-300 overflow-hidden ${
-                  mobileOpen === "courses"
+                className={`transition-all duration-300 overflow-hidden ${mobileOpen === "courses"
                     ? "max-h-60 opacity-100"
                     : "max-h-0 opacity-0"
-                }`}
+                  }`}
               >
                 <ul className="px-6 py-2 space-y-2 text-sm border-t border-gray-700">
                   <li
@@ -334,21 +328,20 @@ function MobileView({ mobileMenu, mobileOpen, setMobileOpen, handleNavigate }) {
                 )}
               </button>
               <div
-                className={`transition-all duration-300 overflow-hidden ${
-                  mobileOpen === "test-series"
+                className={`transition-all duration-300 overflow-hidden ${mobileOpen === "test-series"
                     ? "max-h-40 opacity-100"
                     : "max-h-0 opacity-0"
-                }`}
+                  }`}
               >
                 <ul className="px-6 py-2 space-y-2 text-sm border-t border-gray-700">
                   <li
-                    onClick={() => handleNavigate("/Jee/MainTestSeries")}
+                    onClick={() => handleNavigate("/Jee/TestSeries/JeeMain")}
                     className="cursor-pointer hover:text-[#2fc18b]"
                   >
                     JEE Main Test Series
                   </li>
                   <li
-                    onClick={() => handleNavigate("/Jee/AdvancedTestSeries")}
+                    onClick={() => handleNavigate("/Jee/TestSeries/JeeAdvanced")}
                     className="cursor-pointer hover:text-[#2fc18b]"
                   >
                     JEE Advanced Test Series
@@ -379,11 +372,10 @@ function MobileView({ mobileMenu, mobileOpen, setMobileOpen, handleNavigate }) {
                 )}
               </button>
               <div
-                className={`transition-all duration-300 overflow-hidden ${
-                  mobileOpen === "target-exam"
+                className={`transition-all duration-300 overflow-hidden ${mobileOpen === "target-exam"
                     ? "max-h-40 opacity-100"
                     : "max-h-0 opacity-0"
-                }`}
+                  }`}
               >
                 <ul className="px-6 py-2 space-y-2 text-sm border-t border-gray-700">
                   <li
@@ -416,11 +408,10 @@ function MobileView({ mobileMenu, mobileOpen, setMobileOpen, handleNavigate }) {
                 )}
               </button>
               <div
-                className={`transition-all duration-300 overflow-hidden ${
-                  mobileOpen === "study-material"
+                className={`transition-all duration-300 overflow-hidden ${mobileOpen === "study-material"
                     ? "max-h-96 opacity-100"
                     : "max-h-0 opacity-0"
-                }`}
+                  }`}
               >
                 <ul className="px-6 py-2 space-y-2 text-sm border-t border-gray-700">
                   <li
@@ -499,11 +490,10 @@ function MobileView({ mobileMenu, mobileOpen, setMobileOpen, handleNavigate }) {
                 )}
               </button>
               <div
-                className={`transition-all duration-300 overflow-hidden ${
-                  mobileOpen === "about-us"
+                className={`transition-all duration-300 overflow-hidden ${mobileOpen === "about-us"
                     ? "max-h-40 opacity-100"
                     : "max-h-0 opacity-0"
-                }`}
+                  }`}
               >
                 <ul className="px-6 py-2 space-y-2 text-sm border-t border-gray-700">
                   <li
