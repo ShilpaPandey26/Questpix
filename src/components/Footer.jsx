@@ -12,6 +12,7 @@ import {
   faPhone,
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
+
 import gpbtn from "../assets/gpbtn.png";
 import appstore from "../assets/appstore.png";
 
@@ -35,22 +36,47 @@ export default function Footer() {
             </p>
 
             {/* Social Icons */}
-            <div className="flex flex-wrap gap-3 md:gap-5 ">
+            <div className="flex flex-wrap gap-3 md:gap-5">
               {[
-                faFacebookF,
-                faInstagram,
-                faTwitter,
-                faLinkedinIn,
-                faYoutube,
-              ].map((icon, index) => (
-                <span
+                {
+                  icon: faFacebookF,
+                  link: "https://www.facebook.com/questpixstudyapp/",
+                  hoverColor: "hover:bg-[#1877F2]", 
+                },
+                {
+                  icon: faInstagram,
+                  link: "https://www.instagram.com/questpixstudyapp/",
+                  hoverColor: "hover:bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF]",
+                },
+                {
+                  icon: faTwitter,
+                  link: "https://x.com/questpix/",
+                  hoverColor: "hover:bg-[#1DA1F2]", 
+                },
+                {
+                  icon: faLinkedinIn,
+                  link: "https://www.linkedin.com/company/questpixapp/",
+                  hoverColor: "hover:bg-[#0077B5]", 
+                },
+                {
+                  icon: faYoutube,
+                  link: "https://www.youtube.com/@questpixjee-s6c",
+                  hoverColor: "hover:bg-[#FF0000]", 
+                },
+              ].map((item, index) => (
+                <a
                   key={index}
-                  className="bg-white text-blue-500 p-2 rounded-full cursor-pointer"
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`bg-white text-blue-500 p-2 rounded-full cursor-pointer transition-all duration-300 ${item.hoverColor} hover:text-white`}
                 >
-                  <FontAwesomeIcon icon={icon} className="text-xl" />
-                </span>
+                  <FontAwesomeIcon icon={item.icon} className="text-xl" />
+                </a>
               ))}
             </div>
+
+
           </div>
 
           {/* Middle Section */}
@@ -58,45 +84,50 @@ export default function Footer() {
             <h3 className="text-xl pb-4 font-bold">Useful Links</h3>
             <ul className="text-base text-[rgba(255,255,255,0.6)] list-disc list-inside space-y-1">
               {[
-                "JEE",
-                "NEET",
-                "Class 6 - 10",
-                "Free Resources",
-                "Why Us",
-                "Who We Are",
-                "Career",
-                "Refund and Cancellation",
-                "Terms and Conditions",
-                "Privacy Policy",
-              ].map((link, index) => (
+                { name: "JEE", link: "/Jee" },
+                { name: "NEET", link: "/Neet" },
+                { name: "Class 6 - 10", link: "/SixToTen" },
+                { name: "Free Resources", link: "/Jee/FreeResources" },
+                { name: "Why Us", link: "/Jee/WhyDifferent" },
+                { name: "Who We Are", link: "/Jee/WhoWeare" },
+                { name: "Career", link: "/Jee/Career" },
+                { name: "Refund and Cancellation", link: "/refund-cancellation" },
+                { name: "Terms and Conditions", link: "/terms-and-conditions" },
+                { name: "Privacy Policy", link: "/privacy-policy" },
+              ].map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="hover:text-[#2FC18B]">
-                    {link}
+                  <a
+                    href={item.link}
+
+                    className="hover:text-[#2FC18B] transition-colors duration-200"
+                  >
+                    {item.name}
                   </a>
                 </li>
               ))}
             </ul>
+
           </div>
 
           {/* Right Section */}
           <div className="flex flex-col w-full md:w-[60%] lg:w-[33.33%]">
             <h3 className="text-lg pb-5 font-extrabold">Contact Info</h3>
-            <ul className="text-[16px] text-[rgba(255,255,255,0.6)] space-y-3">
-              <li className="flex items-center gap-4">
+            <ul className="text-[16px] text-[rgba(255,255,255,0.6)] space-y-3 ">
+              <li className="flex items-center gap-4 hover:text-[#2FC18B] cursor-pointer">
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="mt-1 text-[rgba(255,255,255,0.6)]"
+                  className="mt-1 text-[rgba(255,255,255,0.6)] "
                 />
                 questpixedu@gmail.com
               </li>
-              <li className="flex items-start gap-4">
+              <li className="flex items-start gap-4 hover:text-[#2FC18B] cursor-pointer">
                 <FontAwesomeIcon
                   icon={faPhone}
                   className="mt-1 text-[rgba(255,255,255,0.6)]"
                 />
                 +91 95216 87733
               </li>
-              <li className="flex items-start gap-4">
+              <li className="flex items-start gap-4 ">
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
                   className="mt-1 text-[rgba(255,255,255,0.6)]"
