@@ -1,9 +1,9 @@
-import Doubts from "../../../../assets/jee-images/TestSeries/Doubts.png";
+import doubts from "../../../../assets/jee-images/TestSeries/Doubts.png";
 import iPhone from "../../../../assets/jee-images/TestSeries/iPhone.png";
-import Result from "../../../../assets/jee-images/TestSeries/result.png";
-import Student from "../../../../assets/jee-images/TestSeries/Student.png";
-import Map from "../../../../assets/jee-images/TestSeries/map.png";
-import Grow from "../../../../assets/jee-images/TestSeries/grow.png";
+import result from "../../../../assets/jee-images/TestSeries/result.png";
+import student from "../../../../assets/jee-images/TestSeries/student.png";
+import map from "../../../../assets/jee-images/TestSeries/map.png";
+import grow from "../../../../assets/jee-images/TestSeries/grow.png";
 
 const Data = [
   {
@@ -13,7 +13,7 @@ const Data = [
       "We use questions just like the JEE Main and give you super detailed reports on your speed and accuracy — something coaching tests usually don't do.",
       "This targeted practice and analysis is essential for maximizing your performance."
     ],
-    image: Doubts,
+    image: doubts,
     imageWidth: "650px"
   },
   {
@@ -33,7 +33,7 @@ const Data = [
       "We show you why you got things wrong, not just that you did, so you can improve faster.",
       "Learn from your mistakes and improve much faster than with regular tests. Plus, all our questions are always brand new."
     ],
-    image: Result,
+    image: result,
     imageWidth: "520px"
   },
   {
@@ -43,7 +43,7 @@ const Data = [
       "Not too tough, not too easy — just right to help you improve. We study past papers and syllabus changes.",
       "You’ll always be practicing with the most relevant and effective material."
     ],
-    image: Student,
+    image: student,
     imageWidth: "400px"
   },
   {
@@ -53,7 +53,7 @@ const Data = [
       "Get a realistic idea of where you stand compared to other JEE Main aspirants across India.",
       "This realistic ranking helps you prepare for the actual exam environment."
     ],
-    image: Map,
+    image: map,
     imageWidth: "450px"
   },
   {
@@ -63,7 +63,7 @@ const Data = [
       "We always make sure our tests match the newest JEE Main pattern and syllabus.",
       "You’ll always be practicing with the most current and relevant material."
     ],
-    image: Grow,
+    image: grow,
     imageWidth: "450px"
   }
 ];
