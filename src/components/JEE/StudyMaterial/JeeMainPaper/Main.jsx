@@ -4,16 +4,16 @@ import JanSession2025 from './JanSession2025'
 import PreviousYearPapers from './PreviousYearPapers'
 export default function Main() {
     return (
-        <div className="lg:pt-28">
+        <div>
             <img
                 src={year_wise}
                 alt="JEE Main Year Wise"
-                className="rounded-2xl w-full h-[200px] sm:h-[250px] md:h-[300px] "
+                className="rounded-xl w-full h-auto object-cover sm:mt-28"
             />
 
 
-            <div className="flex flex-col md:flex-row gap-10 justify-between items-center  mt-16 lg:mt-28 ">
-                <div className="lg:w-[60%]">
+            <div className="flex flex-col md:flex-row gap-10 justify-between items-center  mt-12  lg:mt-16">
+                <div className="lg:w-[50%]">
                     <h2 className="text-2xl sm:text-4xl font-extrabold mb-6">JEE Main Papers <span className="text-[#2FC18B]">PDFs</span> (Year - Wise)</h2>
                     <h3 className="textxl sm:text-2xl font-extrabold mb-4">Download JEE Main Previous Year Question Papers (Year - Wise) with Solutions (PDFs)</h3>
                     <p className="text-[#9EBDEF]">Ace your JEE Main exam with rigorous practice! This page provides a comprehensive collection of JEE Main previous year question papers with solutions, all available for free download in PDF format.</p>

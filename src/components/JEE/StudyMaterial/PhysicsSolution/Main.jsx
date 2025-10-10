@@ -6,14 +6,13 @@ import PreviousYearPapers from "./PreviousYearPapers";
 
 export default function Main() {
   return (
-    <div className="sm:pt-20 lg:pt-28">
-      <img
-        src={year_wise}
-        alt="JEE Main Year Wise"
-        className="rounded-2xl w-full h-[200px] sm:h-[250px] md:h-[300px] "
-      />
-
-      <div className="flex flex-col md:flex-row gap-10 justify-between items-center mt-16 ">
+    <div>
+               <img
+                   src={year_wise}
+                   alt="JEE Main Year Wise"
+                   className="rounded-xl w-full h-auto object-cover sm:mt-28"
+               />
+      <div className="flex flex-col md:flex-row gap-10 justify-between items-center mt-12 lg:mt-16 ">
         <div className="md:w-[50%]">
           <h2 className="text-2xl sm:text-4xl font-extrabold mb-6">
             NCERT <span className="text-[#2FC18B]">Physics Solutions</span>{" "}
