@@ -26,6 +26,18 @@ import JeeAdvancedPage from "./components/JEE/TargetExam/JeeAdvanced/JeeAdvanced
 import JeeMainTestSeriesPage from "./components/JEE/TestSeries/JeeMain/JeeMainTestSeriesPage";
 import JeeAdvancedTestSeriesPage from "./components/JEE/TestSeries/JeeAdvanced/JeeAdvancedTestSeriesPage";
 
+
+//Study Material
+import JeeAdvancedPaper from "./components/JEE/StudyMaterial/AdvancedPaper/JeeAdvancedPaper"
+import JeeMainPaper from "./components/JEE/StudyMaterial/JeeMainPaper/JeeMainPaper"
+import ChemistryExemplarPage from "./components/JEE/StudyMaterial/ChemistryExemplar/ChemistryExemplarPage"
+import ChemistrySolutionPage from "./components/JEE/StudyMaterial/ChemistrySolution/ChemistrySolutionPage"
+import MathsExemplarPage from "./components/JEE/StudyMaterial/MathsExemplar/MathsExemplarPage"
+import MathsSolutionPage from "./components/JEE/StudyMaterial/MathsSolution/MathsSolutionPage"
+import PhysicsExemplarPage from "./components/JEE/StudyMaterial/PhysicsExemplar/PhysicsExemplarPage"
+import PhysicsSolutionPage from "./components/JEE/StudyMaterial/PhysicsSolution/PhysicsSolutionPage"
+
+
 import NeetWhoWeare from "./components/Neet/NeetWhoWeare";
 import NeetContactUs from "./components/Neet/NeetContactUs";
 import NeetCareer from "./components/Neet/NeetCareer";
@@ -103,8 +115,17 @@ function App() {
         <Route path="/Jee/Courses/CrashCourse" element={<CrashCoursePage />} />
         <Route path="/Jee/TargetExam/JeeMain" element={<JeeMainPage />} />
         <Route path="/Jee/TargetExam/JeeAdvanced" element={<JeeAdvancedPage />} />
-        <Route path="/Jee/TestSeries/JeeMain" element={<JeeMainTestSeriesPage/>} />
-        <Route path="/Jee/TestSeries/JeeAdvanced" element={<JeeAdvancedTestSeriesPage/>} />
+        <Route path="/Jee/TestSeries/JeeMain" element={<JeeMainTestSeriesPage />} />
+        <Route path="/Jee/TestSeries/JeeAdvanced" element={<JeeAdvancedTestSeriesPage />} />
+
+        <Route path="/Jee/MainPdf" element={<JeeMainPaper />} />
+        <Route path="/Jee/AdvancedPdf" element={<JeeAdvancedPaper />} />
+        <Route path="/Jee/MathsSolution" element={<MathsSolutionPage />} />
+        <Route path="/Jee/PhysicsSolution" element={<PhysicsSolutionPage />} />
+        <Route path="/Jee/ChemistrySolution" element={<ChemistrySolutionPage />} />
+        <Route path="/Jee/MathsExemplar" element={<MathsExemplarPage />} />
+        <Route path="/Jee/PhysicsExemplar" element={<PhysicsExemplarPage />} />
+        <Route path="/Jee/ChemistryExemplar" element={<ChemistryExemplarPage />} />
 
 
         <Route path="/Neet" element={<NeetPage />} />

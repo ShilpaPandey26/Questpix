@@ -153,31 +153,57 @@ export default function JeeHeader() {
               Study Material
             </button>
             {openMenu === "study-material" && (
-              <div className="absolute top-10 left-0 mt-2 bg-[#1f2f45] rounded-lg py-4 px-6 w-64 z-50">
+              <div className="absolute top-10 left-0 mt-2 bg-[#1f2f45] rounded-lg py-3 px-6 w-56 z-50">
                 <ul className="space-y-4 text-[14px] cursor-pointer">
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
-                    JEE Main Paper PDFs
+                  <li
+                    className="hover:text-[#2fc18b] cursor-pointer"
+                    onClick={() => handleNavigate("/Jee/MainPdf")}
+                  >
+                    JEE Main Paper PDFs (Year-Wise)
                   </li>
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
-                    JEE Advanced Paper PDFs
+                  <li
+                    className="hover:text-[#2fc18b] cursor-pointer"
+                    onClick={() => handleNavigate("/Jee/AdvancedPdf")}
+                  >
+                    JEE Advanced Paper PDFs (Year-Wise)
                   </li>
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
-                    NCERT Maths Solution
+                  <li
+                    className="hover:text-[#2fc18b] cursor-pointer"
+                    onClick={() => handleNavigate("/Jee/MathsSolution")}
+                  >
+                    NCERT Maths Solution (Class-Wise)
                   </li>
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
-                    NCERT Physics Solution
+                  <li
+                    className="hover:text-[#2fc18b] cursor-pointer"
+                    onClick={() => handleNavigate("/Jee/PhysicsSolution")}
+                  >
+                    NCERT Physics Solution (Class-Wise)
                   </li>
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
-                    NCERT Chemistry Solution
+                  <li
+                    className="hover:text-[#2fc18b] cursor-pointer"
+                    onClick={() => handleNavigate("/Jee/ChemistrySolution")}
+                  > 
+                    NCERT Chemistry Solution (Class-Wise)
                   </li>
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
-                    NCERT Maths Exemplar Solutions
+                  <li
+                    className="hover:text-[#2fc18b] cursor-pointer"
+                    onClick={() => handleNavigate("/Jee/MathsExemplar")}
+                  >
+                    NCERT Maths Exemplar (Class-Wise)
                   </li>
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
-                    NCERT Physics Exemplar Solutions
+                  <li
+                    className="hover:text-[#2fc18b] cursor-pointer"
+                    onClick={() => handleNavigate("/Jee/PhysicsExemplar")}
+                  >
+                    NCERT Physics Exemplar (Class-Wise)
                   </li>
-                  <li className="hover:text-[#2fc18b] cursor-pointer">
-                    NCERT Chemistry Exemplar Solutions
+                  <li
+                    className="hover:text-[#2fc18b] cursor-pointer"
+                    onClick={() =>
+                      handleNavigate("/Jee/ChemistryExemplar")
+                    }
+                  >
+                    NCERT Chemistry Exemplar (Class-Wise)
                   </li>
                 </ul>
               </div>
@@ -416,53 +442,53 @@ function MobileView({ mobileMenu, mobileOpen, setMobileOpen, handleNavigate }) {
                 <ul className="px-6 py-2 space-y-2 text-sm border-t border-gray-700">
                   <li
                     className="hover:text-[#2fc18b] cursor-pointer"
-                    onClick={() => handleNavigate("/Jee/MainPDFs")}
+                    onClick={() => handleNavigate("/Jee/MainPdf")}
                   >
-                    JEE Main Paper PDFs
+                    JEE Main Paper PDFs  (Year-Wise)
                   </li>
                   <li
                     className="hover:text-[#2fc18b] cursor-pointer"
-                    onClick={() => handleNavigate("/Jee/AdvancedPDFs")}
+                    onClick={() => handleNavigate("/Jee/AdvancedPdF")}
                   >
-                    JEE Advanced Paper PDFs
+                    JEE Advanced Paper PDFs  (Year-Wise)
                   </li>
                   <li
                     className="hover:text-[#2fc18b] cursor-pointer"
-                    onClick={() => handleNavigate("/Jee/NCERTMaths")}
+                    onClick={() => handleNavigate("/Jee/MathsSolution")}
                   >
-                    NCERT Maths Solution
+                    NCERT Maths Solution (Class-Wise)
                   </li>
                   <li
                     className="hover:text-[#2fc18b] cursor-pointer"
-                    onClick={() => handleNavigate("/Jee/NCERTPhysics")}
+                    onClick={() => handleNavigate("/Jee/PhysicsSolution")}
                   >
-                    NCERT Physics Solution
+                    NCERT Physics Solution (Class-Wise)
                   </li>
                   <li
                     className="hover:text-[#2fc18b] cursor-pointer"
-                    onClick={() => handleNavigate("/Jee/NCERTChemistry")}
+                    onClick={() => handleNavigate("/Jee/ChemistrySolution")}
                   >
-                    NCERT Chemistry Solution
+                    NCERT Chemistry Solution (Class-Wise)
                   </li>
                   <li
                     className="hover:text-[#2fc18b] cursor-pointer"
-                    onClick={() => handleNavigate("/Jee/NCERTMathsExemplar")}
+                    onClick={() => handleNavigate("/Jee/MathsExemplar")}
                   >
-                    NCERT Maths Exemplar
+                    NCERT Maths Exemplar (Class-Wise)
                   </li>
                   <li
                     className="hover:text-[#2fc18b] cursor-pointer"
-                    onClick={() => handleNavigate("/Jee/NCERTPhysicsExemplar")}
+                    onClick={() => handleNavigate("/Jee/PhysicsExemplar")}
                   >
-                    NCERT Physics Exemplar
+                    NCERT Physics Exemplar (Class-Wise)
                   </li>
                   <li
                     className="hover:text-[#2fc18b] cursor-pointer"
                     onClick={() =>
-                      handleNavigate("/Jee/NCERTChemistryExemplar")
+                      handleNavigate("/Jee/ChemistryExemplar")
                     }
                   >
-                    NCERT Chemistry Exemplar
+                    NCERT Chemistry Exemplar (Class-Wise)
                   </li>
                 </ul>
               </div>

@@ -195,7 +195,7 @@ export default function TestSeries  () {
 
             {/* Video */}
             <div className=" w-full flex  flex-col justify-center items-center">
-                <h2 className="text-2xl sm:text-4xl font-extrabold mb-10 mt-10">Why Test Series is <span className="text-[#2fc18b]">Important?</span></h2>
+                <h2 className="text-2xl sm:text-4xl font-extrabold mb-10 mt-10 text-center">Why Test Series is <span className="text-[#2fc18b]">Important?</span></h2>
                 {!playVideo ? (
                     <div className="cursor-pointer" onClick={handlePlay}>
                         <img
