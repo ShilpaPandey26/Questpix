@@ -35,8 +35,14 @@ import ChemistrySolutionPage from "./components/JEE/StudyMaterial/ChemistrySolut
 import MathsExemplarPage from "./components/JEE/StudyMaterial/MathsExemplar/MathsExemplarPage"
 import MathsSolutionPage from "./components/JEE/StudyMaterial/MathsSolution/MathsSolutionPage"
 import PhysicsExemplarPage from "./components/JEE/StudyMaterial/PhysicsExemplar/PhysicsExemplarPage"
-import PhysicsSolutionPage from "./components/JEE/StudyMaterial/PhysicsSolution/PhysicsSolutionPage"
+import PhysicsSolutionPage from "./components/JEE/StudyMaterial/PhysicsSolution/PhysicsSolutionPage";
+//feature
 
+import TestSeriesPromotionPage from "./components/JEE/FeatureGrid/TestSeriesPromotionPage";
+import TestSeriesPapersets1 from "./components/JEE/FeatureGrid/TestSeriesPapersets1";
+import TestSeriesPapersets2 from "./components/JEE/FeatureGrid/TestSeriesPapersets2";
+import TestSeriesPapersets3 from "./components/JEE/FeatureGrid/TestSeriesPapersets3";
+import TestSeriesPapersets4 from "./components/JEE/FeatureGrid/TestSeriesPapersets4";
 
 import NeetWhoWeare from "./components/Neet/NeetWhoWeare";
 import NeetContactUs from "./components/Neet/NeetContactUs";
@@ -71,6 +77,7 @@ import HomeHeader from "./components/Home/HomeHeader";
 import JeeHeader from "./components/JEE/JeeHeader";
 import NeetHeader from "./components/Neet/NeetHeader";
 import SixToTenHeader from "./components/SixToTen/SixToTenHeader";
+
 
 
 
@@ -126,6 +133,13 @@ function App() {
         <Route path="/Jee/MathsExemplar" element={<MathsExemplarPage />} />
         <Route path="/Jee/PhysicsExemplar" element={<PhysicsExemplarPage />} />
         <Route path="/Jee/ChemistryExemplar" element={<ChemistryExemplarPage />} />
+        <Route path="/Jee/test_series_promotion" element={<TestSeriesPromotionPage />} />
+
+        <Route path="/Jee/test_series_papersets1" element={<TestSeriesPapersets1 />} />
+        <Route path="/Jee/test_series_papersets2" element={<TestSeriesPapersets2 />} />
+        <Route path="/Jee/test_series_papersets3" element={<TestSeriesPapersets3 />} />
+        <Route path="/Jee/test_series_papersets4" element={<TestSeriesPapersets4 />} />
+
 
 
         <Route path="/Neet" element={<NeetPage />} />

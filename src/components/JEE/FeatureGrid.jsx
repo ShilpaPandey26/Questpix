@@ -5,34 +5,42 @@ const features = [
   {
     title: "Personalised Practice",
     icon: "https://questpix.com/assets/images/jee_landing/dash1.svg",
+    link: ""
   },
   {
     title: "JEE Test Series",
     icon: "https://questpix.com/assets/images/jee_landing/dash2.svg",
+    link: "Jee/test_series_promotion"
   },
   {
     title: "Past Year Papers",
     icon: "https://questpix.com/assets/images/jee_landing/dash3.svg",
+    link: ""
   },
   {
     title: "My Virtual Classroom",
     icon: "https://questpix.com/assets/images/jee_landing/dash4.svg",
+    link: ""
   },
   {
     title: "Live Classes",
     icon: "https://questpix.com/assets/images/jee_landing/dash5.svg",
+    link: ""
   },
   {
     title: "Flash Cards",
     icon: "https://questpix.com/assets/images/jee_landing/dash6.svg",
+    link: ""
   },
   {
     title: "Top 500 AIR Club",
     icon: "https://questpix.com/assets/images/jee_landing/dash7.svg",
+    link: ""
   },
   {
     title: "Daily Quiz Challenge",
     icon: "https://questpix.com/assets/images/jee_landing/dash8.svg",
+    link: "Jee/Quiz_details"
   },
 ];
 
@@ -45,7 +53,8 @@ export default function FeatureGrid() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-6 w-full max-w-7xl">
         {features.map((item, index) => (
-          <div
+          <a href={item.link || "#"}
+
             key={index}
             className="bg-[#1B283D] rounded-2xl p-6 flex flex-col justify-between hover:shadow-lg hover:scale-105 transition-transform duration-300"
           >
@@ -64,15 +73,15 @@ export default function FeatureGrid() {
                 {item.title}
               </h2>
 
-              <a
-                href={item.link || "#"}
+              <div
                 className="text-[#2FC18B] text-sm sm:text-base flex items-center gap-1 font-bold whitespace-nowrap"
               >
                 <span>Join</span>
                 <ArrowRight size={22} />
-              </a>
+              </div>
             </div>
-          </div>
+
+          </a>
         ))}
       </div>
     </div>
