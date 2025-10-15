@@ -16,7 +16,8 @@ const QAITS = [
       "200 Topics Covered",
       "3000 Questions"
     ],
-    link:"test_series_papersets1",
+    // link:"test_series_papersets1",
+    link:"Details1",
     students: "5000+ Enrolled",
     rating: "4.8/5",
     oldPrice: "Rs.2800.00",
@@ -36,7 +37,8 @@ const QAITS = [
       "200 Topics Covered",
       "5000 Questions"
     ],
-     link:"test_series_papersets2",
+    //  link:"test_series_papersets2",
+      link:"Details2",
     students: "3000+ Enrolled",
     rating: "4.8/5",
     oldPrice: "Rs.3500.00",
@@ -60,7 +62,8 @@ const QAITS = [
       "190 Topics Covered",
       "3000 Questions"
     ],
-     link:"test_series_papersets3",
+    //  link:"test_series_papersets3",
+      link:"Details3",
     students: "3000+ Enrolled",
     rating: "4.8/5",
     oldPrice: "Rs.3800.00",
@@ -84,7 +87,8 @@ const QAITS = [
       "190 Topics Covered",
       "3000 Questions"
     ],
-     link:"test_series_papersets4",
+    //  link:"test_series_papersets4",
+      link:"Details4",
     students: "3000+ Enrolled",
     rating: "4.9/5",
     oldPrice: "Rs.3500.00",

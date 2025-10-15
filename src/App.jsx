@@ -44,6 +44,13 @@ import TestSeriesPapersets2 from "./components/JEE/FeatureGrid/TestSeriesPaperse
 import TestSeriesPapersets3 from "./components/JEE/FeatureGrid/TestSeriesPapersets3";
 import TestSeriesPapersets4 from "./components/JEE/FeatureGrid/TestSeriesPapersets4";
 
+
+import Details1 from "./components/JEE/PlanDetails/Details1";
+import Details2 from "./components/JEE/PlanDetails/Details2";
+import Details3 from "./components/JEE/PlanDetails/Details3";
+import Details4 from "./components/JEE/PlanDetails/Details4";
+
+
 import NeetWhoWeare from "./components/Neet/NeetWhoWeare";
 import NeetContactUs from "./components/Neet/NeetContactUs";
 import NeetCareer from "./components/Neet/NeetCareer";
@@ -139,6 +146,10 @@ function App() {
         <Route path="/Jee/test_series_papersets2" element={<TestSeriesPapersets2 />} />
         <Route path="/Jee/test_series_papersets3" element={<TestSeriesPapersets3 />} />
         <Route path="/Jee/test_series_papersets4" element={<TestSeriesPapersets4 />} />
+       <Route path="/Jee/Details1" element={<Details1 />} />
+       <Route path="/Jee/Details2" element={<Details2 />} />
+       <Route path="/Jee/Details3" element={<Details3 />} />
+       <Route path="/Jee/Details4" element={<Details4 />} />
 
 
 
