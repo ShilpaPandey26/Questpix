@@ -3,12 +3,11 @@ import React from 'react'
 export default function FillDetails() {
   return (
     <div className="flex flex-col items-center md:items-start px-2 pt-24 sm:pt-16 md:pt-0">
-      <h3 className="text-3xl lg:text-2xl mt-5 mb-20 font-bold text-white">
+      <h3 className="text-3xl lg:text-2xl mt-5 mb-10 font-bold text-white">
         Fill the details Below
       </h3>
+
       <form className="w-full max-w-sm text-white relative">
-
-
         <fieldset className="border border-white rounded-lg p-1 mb-8 ">
           <legend className="px-2 text-base font-semibold">
             Time Duration (minutes)
@@ -35,7 +34,7 @@ export default function FillDetails() {
           </select>
         </fieldset>
 
-         <fieldset className="border border-white rounded-lg p-1 ">
+         <fieldset className="border border-white rounded-lg p-1 mb-6">
           <legend className="px-2 text-base font-semibold">
             Select Difficulty level?
           </legend>
