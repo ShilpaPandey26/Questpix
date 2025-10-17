@@ -53,26 +53,58 @@ const features = [
 
 export default function FeatureGrid() {
   const [showModal, setShowModal] = useState(false);
+  const [activeFeature, setActiveFeature] = useState(null);
+
+
   const [currentStep, setCurrentStep] = useState(1);
   const steps = [1, 2, 3, 4, 5, 6];
 
-  const stepComponents = {
-    1: <SelectExam />,
-    2: <SelectSubject />,
-    3: <SelectTopic />,
-    4: <SelectChapter />,
-    5: <SelectConcept />,
-    6: <FillDetails />,
+  const modals = {
+    "Personalised Practice": [
+      <SelectExam />,
+      <SelectSubject />,
+      <SelectTopic />,
+      <SelectChapter />,
+      <SelectConcept />,
+      <FillDetails />,
+    ],
+    "Past Year Papers": [
+      <div className="p-4 text-white text-xl">Coming Soon<br />
+        This feature is coming soon. Stay tuned for updates!</div>,
+    ],
+    "My Virtual Classroom": [
+      <div className="p-4 text-white text-xl">Coming Soon
+        This feature is coming soon. Stay tuned for updates!</div>,
+    ],
+    "Live Classes": [
+      <div className="p-4 text-white text-xl">Coming Soon
+        This feature is coming soon. Stay tuned for updates!</div>,
+    ],
+    "Flash Cards": [
+      <div className="p-4 text-white text-xl">Coming Soon
+        This feature is coming soon. Stay tuned for updates!</div>,
+    ],
+    "Top 500 AIR Club": [
+      <div className="p-4 text-white text-xl">Coming Soon
+        This feature is coming soon. Stay tuned for updates!</div>,
+    ],
+    "Daily Quiz Challenge": [
+      <div className="p-4 text-white text-xl">Coming Soon
+        This feature is coming soon. Stay tuned for updates!</div>,
+    ],
   };
+
 
   const handleClick = (item) => {
     if (item.title === "JEE Test Series") {
       window.location.href = item.link;
     } else {
-      setShowModal(true);
+      setActiveFeature(item.title);
       setCurrentStep(1);
+      setShowModal(true);
     }
   };
+
 
   useEffect(() => {
     document.body.style.overflow = showModal ? "hidden" : "auto";
@@ -146,40 +178,50 @@ export default function FeatureGrid() {
             </div>
 
             {/* steps */}
-            <div className=" absolute top-28 right-5 sm:right-10">
-              <div className="flex flex-row md:flex-col gap-3 sm:gap-10 relative">
-                <div
-                  className=" absolute top-1/2 md:top-0   left-0 md:left-1/2   md:transform md:-translate-x-1/2 w-full md:w-[2px] h-[2px] md:h-full bg-white z-0"></div>
-                {steps.map((step) => (
+            {activeFeature && modals[activeFeature].length > 1 && (
+              <div className=" absolute top-28 right-5 sm:right-10">
+                <div className="flex flex-row md:flex-col gap-3 sm:gap-10 relative">
                   <div
-                    key={step}
-                    onClick={() => setCurrentStep(step)}
-                    className={`relative z-10 rounded-full p-1 text-black bg-white text-lg w-10 text-center cursor-pointer 
+                    className=" absolute top-1/2 md:top-0   left-0 md:left-1/2   md:transform md:-translate-x-1/2 w-full md:w-[2px] h-[2px] md:h-full bg-white z-0"></div>
+                  {steps.map((step) => (
+                    <div
+                      key={step}
+                      onClick={() => setCurrentStep(step)}
+                      className={`relative z-10 rounded-full p-1 text-black bg-white text-lg w-10 text-center cursor-pointer 
                       ${step === currentStep
-                        ? "border-2 border-[#0CD6BE] text-[#0CD6BE] "
-                        : "border-2 border-white  "
-                      }`}
-                  >
-                    {step}
-                  </div>
-                ))}
+                          ? "border-2 border-[#0CD6BE] text-[#0CD6BE] "
+                          : "border-2 border-white  "
+                        }`}
+                    >
+                      {step}
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Content */}
-            <div className="overflow-y-auto">{stepComponents[currentStep]}</div>
-
-
-            <div className="sm:mt-auto flex justify-start mb-6">
-              <button
-                className="text-white bg-[#2FC18B] px-6 sm:px-8 py-2 rounded-lg font-semibold flex gap-2 items-center hover:bg-[#27a577] transition"
-                onClick={() =>
-                  setCurrentStep((prev) => Math.min(prev + 1, steps.length))
-                }
-              >
-                Next <ArrowRight strokeWidth={2} className="h-5" />
-              </button>
+            <div className="overflow-y-auto">
+              {activeFeature && modals[activeFeature][currentStep - 1]}
             </div>
+
+
+
+            {activeFeature && modals[activeFeature].length > 1 && (
+              <div className="sm:mt-auto flex justify-start mb-6">
+                <button
+                  className="text-white bg-[#2FC18B] px-6 sm:px-8 py-2 rounded-lg font-semibold flex gap-2 items-center hover:bg-[#27a577] transition"
+                  onClick={() =>
+                    setCurrentStep((prev) =>
+                      Math.min(prev + 1, modals[activeFeature].length)
+                    )
+                  }
+                >
+                  Next <ArrowRight strokeWidth={2} className="h-5" />
+                </button>
+              </div>
+            )}
+
           </div>
         </div>
       )}
