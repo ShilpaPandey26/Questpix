@@ -6,7 +6,7 @@ import IITvideo from "../../assets/jee-images/IITvideo.png";
 
 export default function CrackJeeSection() {
   return (
-    <div className=" px-4 pt-20 md:pt-38 flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+    <div className=" px-4 pt-20  md:pt-38 flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
       {/* Left Side */}
       <div className="w-full lg:w-1/2 text-center md:text-left">
         <p className="text-xl  font-bold pb-1">The Only App You Need To</p>

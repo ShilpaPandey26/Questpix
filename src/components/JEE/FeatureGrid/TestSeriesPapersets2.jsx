@@ -13,14 +13,14 @@ function TestCard({ test, type }) {
     if (type == "chapter") {
         return (
             <div className="bg-[#1b283d] p-4 sm:px-8 py-6 rounded-lg max-w-5xl mx-auto">
-            
+
                 <div
                     onClick={() => setIsOpen(!isOpen)}
                     className="flex flex-row text-center  sm:text-left justify-between items-center cursor-pointer gap-10"
                 >
-                   <h3 className="text-lg sm:text-xl font-extrabold text-white bg-[#304a73] rounded-full w-10 h-10 flex items-center justify-center">
-            {test.id}
-          </h3>
+                    <h3 className="text-lg sm:text-xl font-extrabold text-white bg-[#304a73] rounded-full w-10 h-10 flex items-center justify-center">
+                        {test.id}
+                    </h3>
                     <h3 className="text-xl sm:text-xl font-extrabold text-white w-full">
                         {test.name}
                     </h3>
@@ -370,7 +370,7 @@ export default function TestSeriesPapersets4() {
             questions: 75,
             time: "180 Minutes",
             date: "23 Nov 2025",
-             icons: questionIconSet,
+            icons: questionIconSet,
 
         },
         {
@@ -401,7 +401,7 @@ export default function TestSeriesPapersets4() {
             questions: 75,
             time: "180 Minutes",
             date: "07 Dec 2025",
-           icons: questionIconSet,
+            icons: questionIconSet,
         },
         {
             id: 5,
@@ -411,7 +411,7 @@ export default function TestSeriesPapersets4() {
             questions: 75,
             time: "180 Minutes",
             date: "07 Dec 2025",
-           icons: questionIconSet,
+            icons: questionIconSet,
         },
 
 
@@ -431,27 +431,27 @@ export default function TestSeriesPapersets4() {
                     Q-AITS (Standard Test Series)
                 </h2>
 
-               
+
                 <div className="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-8 mb-6 sm:mb-10">
                     {
-                    mainTabs.map((tab) => (
-                        <button
-                            key={tab.id}
-                            onClick={() => {
-                                setActiveMainTab(tab.id);
-                                setActiveSubject("mathematics");
-                            }}
-                            className={`text-base sm:text-lg md:text-xl transition-colors duration-200 ${activeMainTab === tab.id
+                        mainTabs.map((tab) => (
+                            <button
+                                key={tab.id}
+                                onClick={() => {
+                                    setActiveMainTab(tab.id);
+                                    setActiveSubject("mathematics");
+                                }}
+                                className={`text-base sm:text-lg md:text-xl transition-colors duration-200 ${activeMainTab === tab.id
                                     ? "border-b-2 border-[#2FC18B] text-white"
                                     : "text-[#4A6A99] hover:text-white"
-                                }`}
-                        >
-                            {tab.label}
-                        </button>
-                    ))}
+                                    }`}
+                            >
+                                {tab.label}
+                            </button>
+                        ))}
                 </div>
 
-                
+
                 {activeMainTab === "chapterWise" && (
                     <div className="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-8 mb-8">
                         {subjects.map((sub) => (
@@ -459,8 +459,8 @@ export default function TestSeriesPapersets4() {
                                 key={sub.id}
                                 onClick={() => setActiveSubject(sub.id)}
                                 className={`flex items-center gap-2 text-sm sm:text-base md:text-lg font-medium  ${activesubject === sub.id
-                                        ? "rounded-lg border-t border-l border-r border-[#2FC18B] text-white p-2 sm:px-6 sm:py-2 cursor-pointer"
-                                        : "text-[#4A6A99] "
+                                    ? "rounded-lg border-t border-l border-r border-[#2FC18B] text-white p-2 sm:px-6 sm:py-2 cursor-pointer"
+                                    : "text-[#4A6A99] "
                                     }`}
                             >
                                 <img src={star_grey} className="h-4 w-4 sm:h-5 sm:w-5" alt="star" />
@@ -470,7 +470,7 @@ export default function TestSeriesPapersets4() {
                     </div>
                 )}
 
-             
+
                 <div className="space-y-6 mt-6 sm:mt-10">
                     {currentTests.map((test) => (
                         <TestCard

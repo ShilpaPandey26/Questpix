@@ -3,8 +3,6 @@ import { FaStar } from "react-icons/fa";
 import jee_main_thumbnail from "../../../../assets/jee-images/jee_main_thumbnail.png";
 import { X } from "lucide-react";
 
-
-
 export default function JeeMainTestSeries() {
     const points = [
         "Tests that don't replicate the actual JEE Main exam, leaving you unprepared for the real thing.",

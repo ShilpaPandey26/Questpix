@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Star, User } from "lucide-react";
 import maxresdefault from "../../../../assets/jee-images/TestSeries/maxresdefault.jpg"
 
+
 const advancedSeries = [
     {
         title: "Adv. Premium Test Series",
@@ -173,7 +174,7 @@ export default function TestSeries  () {
                 </p>
             </div>
 
-          
+           
             <section className="max-w-4xl mx-auto px-4 mb-10">
                 {/* <h2 className="text-3xl font-semibold mb-8 text-center">Advanced Series</h2> */}
                 <div className="grid md:grid-cols-2 gap-8">
@@ -183,7 +184,7 @@ export default function TestSeries  () {
                 </div>
             </section>
 
-           
+          
             <section className="max-w-4xl mx-auto px-4 mb-10">
                 {/* <h2 className="text-3xl font-semibold mb-8 text-center">Main Test Series</h2> */}
                 <div className="grid md:grid-cols-2 gap-8">
@@ -194,7 +195,7 @@ export default function TestSeries  () {
             </section>
 
             {/* Video */}
-            <div className=" w-full flex  flex-col justify-center items-center">
+           <div className=" w-full flex  flex-col justify-center items-center">
                 <h2 className="text-2xl sm:text-4xl font-extrabold mb-10 mt-10 text-center">Why Test Series is <span className="text-[#2fc18b]">Important?</span></h2>
                 {!playVideo ? (
                     <div className="cursor-pointer" onClick={handlePlay}>
