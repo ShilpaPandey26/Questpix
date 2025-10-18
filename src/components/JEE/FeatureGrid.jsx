@@ -117,7 +117,7 @@ export default function FeatureGrid() {
           Let’s <span className="text-[#2FC18B]">Start.</span>
         </h1>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 w-full max-w-7xl">
+         <div className="grid grid-cols-2  lg:grid-cols-4 gap-5 w-full max-w-7xl">
           {features.map((item, index) => (
             <a
               key={index}
@@ -133,13 +133,13 @@ export default function FeatureGrid() {
                 alt={`${item.title} icon`}
                 className="w-12 h-12 sm:w-14 sm:h-14 mb-5"
               />
-              <div className="flex items-center justify-between">
-                <h2 className="text-sm sm:text-lg md:text-xl font-bold text-white leading-snug">
+              <div className="flex flex-col md:flex-row md:items-center justify-between">
+                <h2 className="text-sm sm:text-lg md:text-xl font-bold text-white leading-snug mb-2 md:w-[50%]">
                   {item.title}
                 </h2>
                 <div className="text-[#2FC18B] text-sm sm:text-base flex items-center gap-1 font-bold">
                   <span>Join</span>
-                  <ArrowRight size={18} />
+                  <ArrowRight size={18} strokeWidth={3} />
                 </div>
               </div>
             </a>
