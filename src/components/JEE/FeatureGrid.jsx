@@ -32,7 +32,7 @@ const features = [
   {
     title: "Live Classes",
     icon: "https://questpix.com/assets/images/jee_landing/dash5.svg",
-    link: "",
+    link: "Jee/liveclass/class",
   },
   {
     title: "Flash Cards",
@@ -54,9 +54,8 @@ const features = [
 export default function FeatureGrid() {
   const [showModal, setShowModal] = useState(false);
   const [activeFeature, setActiveFeature] = useState(null);
-
-
   const [currentStep, setCurrentStep] = useState(1);
+
   const steps = [1, 2, 3, 4, 5, 6];
 
   const modals = {
@@ -98,7 +97,11 @@ export default function FeatureGrid() {
   const handleClick = (item) => {
     if (item.title === "JEE Test Series") {
       window.location.href = item.link;
-    } else {
+    }
+    else if (item.title === "Live Classes") {
+      window.location.href = item.link;
+    }
+    else {
       setActiveFeature(item.title);
       setCurrentStep(1);
       setShowModal(true);
@@ -106,9 +109,23 @@ export default function FeatureGrid() {
   };
 
 
+
+
   useEffect(() => {
-    document.body.style.overflow = showModal ? "hidden" : "auto";
+    if (showModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+
   }, [showModal]);
+
+
+
 
   return (
     <div>
@@ -117,7 +134,7 @@ export default function FeatureGrid() {
           Let’s <span className="text-[#2FC18B]">Start.</span>
         </h1>
 
-         <div className="grid grid-cols-2  lg:grid-cols-4 gap-5 w-full max-w-7xl">
+        <div className="grid grid-cols-2  lg:grid-cols-4 gap-5 w-full max-w-7xl">
           {features.map((item, index) => (
             <a
               key={index}
@@ -225,6 +242,7 @@ export default function FeatureGrid() {
           </div>
         </div>
       )}
+
     </div>
   );
 }

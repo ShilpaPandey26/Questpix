@@ -24,7 +24,7 @@ function TestCard({ test, type }) {
                     <h3 className="text-xl sm:text-xl font-extrabold text-white w-full">
                         {test.name}
                     </h3>
-                    <span className="p-3 font- rounded-[50%] text-[#2FC18B] border-2 border-[#2FC18B] hidden sm:block">
+                    <span className="p-3  rounded-[50%] text-[#2FC18B] border-2 border-[#2FC18B] hidden sm:block">
                         {isOpen ? <ChevronUp size={20} strokeWidth={4} /> : <ChevronDown size={20} strokeWidth={4} />}
                     </span>
                 </div>

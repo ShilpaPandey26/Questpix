@@ -36,8 +36,8 @@ import MathsExemplarPage from "./components/JEE/StudyMaterial/MathsExemplar/Math
 import MathsSolutionPage from "./components/JEE/StudyMaterial/MathsSolution/MathsSolutionPage"
 import PhysicsExemplarPage from "./components/JEE/StudyMaterial/PhysicsExemplar/PhysicsExemplarPage"
 import PhysicsSolutionPage from "./components/JEE/StudyMaterial/PhysicsSolution/PhysicsSolutionPage";
-//feature
 
+//feature
 import TestSeriesPromotionPage from "./components/JEE/FeatureGrid/TestSeriesPromotionPage";
 import TestSeriesPapersets1 from "./components/JEE/FeatureGrid/TestSeriesPapersets1";
 import TestSeriesPapersets2 from "./components/JEE/FeatureGrid/TestSeriesPapersets2";
@@ -49,6 +49,13 @@ import Details1 from "./components/JEE/PlanDetails/Details1";
 import Details2 from "./components/JEE/PlanDetails/Details2";
 import Details3 from "./components/JEE/PlanDetails/Details3";
 import Details4 from "./components/JEE/PlanDetails/Details4";
+
+//live class
+import Class from "./components/JEE/LiveClass/Class";
+
+
+//schedule
+import ClassSchedule from "./components/JEE/schedule/ClassSchedule";
 
 
 import NeetWhoWeare from "./components/Neet/NeetWhoWeare";
@@ -84,6 +91,7 @@ import HomeHeader from "./components/Home/HomeHeader";
 import JeeHeader from "./components/JEE/JeeHeader";
 import NeetHeader from "./components/Neet/NeetHeader";
 import SixToTenHeader from "./components/SixToTen/SixToTenHeader";
+
 
 
 
@@ -146,11 +154,16 @@ function App() {
         <Route path="/Jee/test_series_papersets2" element={<TestSeriesPapersets2 />} />
         <Route path="/Jee/test_series_papersets3" element={<TestSeriesPapersets3 />} />
         <Route path="/Jee/test_series_papersets4" element={<TestSeriesPapersets4 />} />
-       <Route path="/Jee/Details1" element={<Details1 />} />
-       <Route path="/Jee/Details2" element={<Details2 />} />
-       <Route path="/Jee/Details3" element={<Details3 />} />
-       <Route path="/Jee/Details4" element={<Details4 />} />
+        <Route path="/Jee/Details1" element={<Details1 />} />
+        <Route path="/Jee/Details2" element={<Details2 />} />
+        <Route path="/Jee/Details3" element={<Details3 />} />
+        <Route path="/Jee/Details4" element={<Details4 />} />
 
+        <Route path="/Jee/liveclass/class" element={<Class />} />
+
+
+
+        <Route path="/Jee/liveclass_schedule" element={<ClassSchedule />} />
 
 
         <Route path="/Neet" element={<NeetPage />} />

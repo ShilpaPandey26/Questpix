@@ -6,7 +6,7 @@ export default function FillDetails() {
       <h3 className="text-3xl lg:text-2xl mt-5 mb-10 font-bold text-white">
         Fill the details Below
       </h3>
-
+      
       <form className="w-full max-w-sm text-white relative">
         <fieldset className="border border-white rounded-lg p-1 mb-8 ">
           <legend className="px-2 text-base font-semibold">
