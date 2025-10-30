@@ -52,19 +52,19 @@ export default function HomeHeader() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-[#1f2f45]  font-bold flex flex-col items-center gap-4 py-4">
-          <a href="#section-0" onClick={() => setMenuOpen(false)}>
+          <a href="/PartnerWithUs/StudyMaterialPackage" onClick={() => setMenuOpen(false)}>
             Study Material Package
           </a>
-          <a href="#section-1" onClick={() => setMenuOpen(false)}>
+          <a href="/PartnerWithUs/AdvancedTestingPlatform" onClick={() => setMenuOpen(false)}>
             Testing Platform
           </a>
-          <a href="#section-2" onClick={() => setMenuOpen(false)}>
+          <a href="/PartnerWithUs/DoubtResolutionSystem" onClick={() => setMenuOpen(false)}>
             Recorded
           </a>
-          <a href="#section-3" onClick={() => setMenuOpen(false)}>
+          <a href="/PartnerWithUs/InstitutionalDevelopment" onClick={() => setMenuOpen(false)}>
             Rank Booster
           </a>
-          <a href="#" onClick={() => setMenuOpen(false)}>
+          <a href="/PartnerWithUs" onClick={() => setMenuOpen(false)}>
             School Integrated Program
           </a>
           <button
