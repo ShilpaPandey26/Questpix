@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
 import logo from "../assets/head-logo.svg";
 
 export default function Header() {
@@ -23,7 +22,6 @@ export default function Header() {
           <button
             onClick={() => {
               navigate("/PartnerWithUs");
-              setMenuOpen(false);
             }}
             className="bg-[#2fc18b] text-white font-medium rounded-lg cursor-pointer
              px-1 py-1 sm:px-3 sm:py-2

@@ -55,7 +55,7 @@ export default function HowQuestPixWorks() {
                   Start Now
                 </a>
                 <a
-                  href="#"
+                  href={section.link}
                   className="inline-block  text-white border-1 border-[#2FC18B]  rounded-[10px] px-5 py-2 text-base no-underline  transition"
                 >
                   Know More

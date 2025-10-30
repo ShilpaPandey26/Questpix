@@ -25,6 +25,7 @@ const questPixData = [
       },
     ],
     image: resources,
+    link:"/PartnerWithUs/StudyMaterialPackage"
   },
   {
     title: "Advanced Testing Platform",
@@ -46,6 +47,7 @@ const questPixData = [
       },
     ],
     image:management,
+    link:"/PartnerWithUs/AdvancedTestingPlatform"
   },
   {
     title: "Recorded Lectures & Doubt Resolution System",
@@ -67,6 +69,7 @@ const questPixData = [
       },
     ],
     image: system,
+    link:"/PartnerWithUs/DoubtResolutionSystem"
   },
   {
     title: "Holistic Student & Institutional Development",
@@ -88,29 +91,30 @@ const questPixData = [
       },
     ],
     image: development,
+    link:"/PartnerWithUs/InstitutionalDevelopment"
   },
-  {
-    title: "Academic Curriculum Management",
-    points: [
-      {
-        heading: "Academic Planning & Monitoring",
-        description:
-          "We help you plan your academic year with schedules for teaching, lectures, exams, with complete syllabus & calendar.",
-      },
-      {
-        heading: "Effective Teaching Strategies",
-        description:
-          "Our program guides your faculty with proven Kota methodologies, improving their teaching for superior preparation.",
-      },
-      {
-        heading: "QuestPix Ecosystem Integration",
-        description:
-          "We implement a complete JEE/NEET/Pre-Foundation/Foundation ecosystem into your organisation with all the study materials & tools.",
-      },
-    ],
-    image: analysis,
+  // {
+  //   title: "Academic Curriculum Management",
+  //   points: [
+  //     {
+  //       heading: "Academic Planning & Monitoring",
+  //       description:
+  //         "We help you plan your academic year with schedules for teaching, lectures, exams, with complete syllabus & calendar.",
+  //     },
+  //     {
+  //       heading: "Effective Teaching Strategies",
+  //       description:
+  //         "Our program guides your faculty with proven Kota methodologies, improving their teaching for superior preparation.",
+  //     },
+  //     {
+  //       heading: "QuestPix Ecosystem Integration",
+  //       description:
+  //         "We implement a complete JEE/NEET/Pre-Foundation/Foundation ecosystem into your organisation with all the study materials & tools.",
+  //     },
+  //   ],
+  //   image: analysis,
    
-  },
+  // },
 ];
 
 export default questPixData;

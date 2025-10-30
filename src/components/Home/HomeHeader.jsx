@@ -25,7 +25,7 @@ export default function HomeHeader() {
           <a href="#section-1">Testing Platform</a>
           <a href="#section-2">Recorded</a>
           <a href="#section-3">Rank Booster</a>
-          <a href="#section-4">School Integrated Program</a>
+          <a href="#">School Integrated Program</a>
         </div>
 
         {/* Home Button */}
@@ -64,7 +64,7 @@ export default function HomeHeader() {
           <a href="#section-3" onClick={() => setMenuOpen(false)}>
             Rank Booster
           </a>
-          <a href="#section-4" onClick={() => setMenuOpen(false)}>
+          <a href="#" onClick={() => setMenuOpen(false)}>
             School Integrated Program
           </a>
           <button

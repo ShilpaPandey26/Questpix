@@ -78,7 +78,6 @@ import SixToTenContactUs from "./components/SixToTen/SixToTenContactUs";
 import SixToTenCareer from "./components/SixToTen/SixToTenCareer";
 import SixToTenFreeMain from "./components/SixToTen/FreeResources/SixToTenFreeMainPage";
 import SixToTenWhyMain from "./components/SixToTen/WhyUs/SixToTenWhyMainPage";
-
 import ClassSixPage from "./components/SixToTen/Courses/ClassSix/ClassSixPage";
 
 // login
@@ -92,7 +91,11 @@ import JeeHeader from "./components/JEE/JeeHeader";
 import NeetHeader from "./components/Neet/NeetHeader";
 import SixToTenHeader from "./components/SixToTen/SixToTenHeader";
 
-
+//partner with us
+import StudyMaterialPackage from "./components/Home/QuestPixWorks/StudyMaterialPackage"
+import InstitutionalDevelopment from "./components/Home/QuestPixWorks/InstitutionalDevelopment"
+import DoubtResolutionSystem from "./components/Home/QuestPixWorks/DoubtResolutionSystem"
+import AdvancedTestingPlatform from "./components/Home/QuestPixWorks/AdvancedTestingPlatform"
 
 
 
@@ -124,6 +127,11 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/PartnerWithUs" element={<HomePage />} />
+
+        <Route path="/PartnerWithUs/StudyMaterialPackage" element={<StudyMaterialPackage/>} />
+        <Route path="/PartnerWithUs/AdvancedTestingPlatform" element={<AdvancedTestingPlatform/>} />
+        <Route path="/PartnerWithUs/DoubtResolutionSystem" element={<DoubtResolutionSystem/>} />
+        <Route path="/PartnerWithUs/InstitutionalDevelopment" element={<InstitutionalDevelopment/>} />
 
         <Route path="/Jee" element={<JeePage />} />
         <Route path="/Jee/FreeResources" element={<FreeMain />} />
@@ -160,9 +168,6 @@ function App() {
         <Route path="/Jee/Details4" element={<Details4 />} />
 
         <Route path="/Jee/liveclass/class" element={<Class />} />
-
-
-
         <Route path="/Jee/liveclass_schedule" element={<ClassSchedule />} />
 
 
