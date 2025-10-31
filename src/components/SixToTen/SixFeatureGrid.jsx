@@ -27,11 +27,11 @@ const features = [
 export default function SixFeatureGrid() {
   return (
     <div className="container flex flex-col items-center justify-center ">
-      <div className="grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-4 gap-6 w-full max-w-xl xl:max-w-7xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full max-w-6xl">
         {features.map((item, index) => (
           <div
             key={index}
-            className="relative bg-[#1B283D] w-full sm:w-[260px] md:w-[280px] h-auto min-h-[160px] rounded-2xl p-6 flex flex-col justify-between cursor-pointer hover:shadow-lg hover:scale-105 transition-transform duration-300"
+            className="relative bg-[#1B283D] w-full rounded-2xl p-6 flex flex-col justify-between cursor-pointer hover:shadow-lg hover:scale-105 transition-transform duration-300"
           >
             {/* FREE image */}
             {item.free && (
@@ -52,16 +52,16 @@ export default function SixFeatureGrid() {
             </div>
 
             {/* Title + Join */}
-            <div className="flex items-center justify-between mt-4">
-              <h2 className="text-base lg:text-lg font-bold text-white w-[60%] sm:w-[40%]">
+            <div className="flex sm:flex-col md:flex-row md:items-center justify-between mt-4">
+              <h2 className="text-lg md:text-xl text-left font-bold text-white mb-2 md:w-[50%]">
                 {item.title}
               </h2>
               <a
                 href="#"
-                className="text-[#2FC18B] text-sm sm:text-[16px] flex items-center gap-1 font-bold"
+                className="text-[#2FC18B] text-base flex items-center gap-1 font-bold"
               >
                 Join
-                <ArrowRight size={18} />
+                <ArrowRight size={22} />
               </a>
             </div>
           </div>

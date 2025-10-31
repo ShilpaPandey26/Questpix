@@ -46,8 +46,7 @@ export default function JeeHeader() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:max-w-[600px] xl:max-w-[1000px] lg:flex lg:gap-8 xl:gap-10 text-base font-semibold relative ">
-          {/* Courses */}
+               <div className="hidden lg:flex gap-8 mx-8 text-lg font-semibold relative">
           <div className="relative dropdown">
             <button
               onClick={() => toggleMenu("courses")}

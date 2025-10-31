@@ -6,7 +6,7 @@ export default function Class11() {
   const [selectedClass, setSelectedClass] = useState("Class 11th");
 
 
-  const courseData = {
+const courseData = {
     "Class 11th": [
       {
         title: "JEE 11th Online Full Course",
@@ -77,7 +77,6 @@ export default function Class11() {
     ],
   };
 
-
   const selectedCourses = courseData[selectedClass];
 
 
@@ -134,7 +133,7 @@ export default function Class11() {
                     <li key={i}>{f}</li>
                   ))}
                 </ul>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mt-5">
                   <h2 className="text-2xl font-bold">Purchased</h2>
                   <h2 className="text-[#2fc18b] text-2xl flex items-center font-bold">open <ArrowRight size={28} strokeWidth={3} /></h2>
                 </div>

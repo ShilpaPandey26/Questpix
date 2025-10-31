@@ -61,12 +61,14 @@ function ClassCard() {
         <h2 className="px-4 py-2 rounded-[50%] bg-[#304a73] font-bold ">1</h2>
         <h3 className="sm:w-[85%] font-extrabold text-xl">July 15, 2025 class</h3>
         <span className="p-2 rounded-[50%] text-[#2FC18B] border-2 border-[#2FC18B] cursor-pointer">
+
           {isOpen ? <ChevronUp size={20} strokeWidth={4} /> : <ChevronDown size={20} strokeWidth={4} />} </span> </div>
+
       {isOpen && (<div className="bg-[#293c5a] mb-3 mt-4 p-5 flex flex-col lg:flex-row justify-between items-center gap-6 rounded-xl">
         {/* 1 */}
-        <div className="flex justify-between w-full lg:w-[30%]">
-          <div className="flex flex-col gap-2">
-            <div className="flex gap-5 font-bold">
+        <div className="flex justify-between lg:w-[30%] ">
+          <div className="flex flex-col gap-2 ">
+            <div className="flex gap-5 font-bold ">
               <h2 className="flex gap-1 items-center">
                 <img src={sub} alt="subject" className="h-5" />Subjects </h2>
               <h2 className="flex items-center gap-1">MATHEMATICS <img src={pdf} alt="pdf" className="h-5" /> </h2>
@@ -76,7 +78,8 @@ function ClassCard() {
             <p className="text-[#7B8EAC] px-4">COMPOUND ANGLE(General )</p>
             <p className="text-[#7B8EAC] px-4 flex items-center gap-1">
               <img src={time} alt="time" /> 23:19:00 - 23:52:00</p>
-          </div> <div className="border border-[#B5D4FF] hidden lg:block "></div>
+          </div> 
+          <div className="border border-[#B5D4FF] hidden lg:block"></div>
         </div>
 
         {/* 2 */}
@@ -92,11 +95,11 @@ function ClassCard() {
         </div>
 
         {/* 3 */}
-        <div className="flex gap-3 flex-col md:flex-row items-center justify-between lg:w-[35%]">
+        <div className="flex gap-6 flex-col md:flex-row items-center justify-between lg:w-[35%]">
           <div>
-            <button className="font-semibold px-4 py-2 bg-[#007bff] cursor-pointer rounded-lg hover:bg-[#0056b3] hover:scale-[1.02] transition-all">Watch Recorded</button>
+            <button className="font-semibold px-4 py-2 bg-[#007bff] cursor-pointer rounded-lg hover:bg-[#0056b3] hover:scale-[1.02] transition-all mt-5">Watch Recorded</button>
           </div>
-          <div className="flex items-center flex-wrap gap-6 lg:w-[40%]">
+          <div className="flex items-center justify-center flex-wrap gap-6 lg:w-[40%] mt-5">
             <h2><img src={notes} alt="notes" className="h-8" />Notes</h2>
             <h2><img src={question} alt="question" className="h-8" />Doubts</h2>
             <h2><img src={notes} alt="notes" className="h-8" />DPP</h2>

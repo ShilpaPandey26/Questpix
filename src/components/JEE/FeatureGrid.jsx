@@ -8,6 +8,10 @@ import SelectChapter from "./PersonalisedPractice/SelectChapter";
 import SelectConcept from "./PersonalisedPractice/SelectConcept";
 import FillDetails from "./PersonalisedPractice/FillDetails";
 
+import SelectSubjectFlash from "./PersonalisedPractice/SelectSubjectFlash";
+import SelectTopicFlash from "./PersonalisedPractice/SelectTopicFlash";
+import SelectChapterFlash from "./PersonalisedPractice/SelectChapterFlash";
+
 const features = [
   {
     title: "Personalised Practice",
@@ -55,8 +59,11 @@ export default function FeatureGrid() {
   const [showModal, setShowModal] = useState(false);
   const [activeFeature, setActiveFeature] = useState(null);
   const [currentStep, setCurrentStep] = useState(1);
+  const [selectedSubject, setSelectedSubject] = useState(null);
+  const [selectedTopic, setSelectedTopic] = useState(null);
 
-  const steps = [1, 2, 3, 4, 5, 6];
+
+
 
   const modals = {
     "Personalised Practice": [
@@ -80,8 +87,16 @@ export default function FeatureGrid() {
         This feature is coming soon. Stay tuned for updates!</div>,
     ],
     "Flash Cards": [
-      <div className="p-4 text-white text-xl">Coming Soon
-        This feature is coming soon. Stay tuned for updates!</div>,
+      <SelectSubjectFlash
+        setCurrentStep={setCurrentStep}
+        setSelectedSubject={setSelectedSubject}
+      />,
+      <SelectTopicFlash
+        selectedSubject={selectedSubject}
+        setCurrentStep={setCurrentStep}
+        setSelectedTopic={setSelectedTopic}
+      />,
+      <SelectChapterFlash selectedTopic={selectedTopic} />,
     ],
     "Top 500 AIR Club": [
       <div className="p-4 text-white text-xl">Coming Soon
@@ -93,6 +108,15 @@ export default function FeatureGrid() {
     ],
   };
 
+  let steps = [];
+
+  if (activeFeature) {
+    const totalSteps = modals[activeFeature].length;
+    steps = [];
+    for (let i = 1; i <= totalSteps; i++) {
+      steps.push(i);
+    }
+  }
 
   const handleClick = (item) => {
     if (item.title === "JEE Test Series") {
@@ -131,10 +155,10 @@ export default function FeatureGrid() {
     <div>
       <div className="px-4 sm:px-8 md:px-12 py-6 flex flex-col items-center justify-center">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-10 text-center">
-          Let’s <span className="text-[#2FC18B]">Start.</span>
+          Let's <span className="text-[#2FC18B]">Start.</span>
         </h1>
 
-        <div className="grid grid-cols-2  lg:grid-cols-4 gap-5 w-full max-w-7xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6 w-full max-w-7xl">
           {features.map((item, index) => (
             <a
               key={index}
@@ -145,18 +169,24 @@ export default function FeatureGrid() {
               }}
               className="bg-[#1B283D] rounded-2xl p-5 sm:p-6 flex flex-col justify-between hover:shadow-lg hover:scale-105 transition-transform duration-300"
             >
-              <img
-                src={item.icon}
-                alt={`${item.title} icon`}
-                className="w-12 h-12 sm:w-14 sm:h-14 mb-5"
-              />
-              <div className="flex flex-col md:flex-row md:items-center justify-between">
-                <h2 className="text-sm sm:text-lg md:text-xl font-bold text-white leading-snug mb-2 md:w-[50%]">
+              {/* Icon */}
+              <div>
+                <img
+                  src={item.icon}
+                  alt={`${item.title} icon`}
+                  className="w-14 h-14 mb-6"
+                />
+              </div>
+
+              {/* Title + Button */}
+              <div className="flex sm:flex-col md:flex-row md:items-center justify-between">
+                <h2 className="text-lg md:text-xl text-left font-bold text-white mb-2 md:w-[50%]">
                   {item.title}
                 </h2>
-                <div className="text-[#2FC18B] text-sm sm:text-base flex items-center gap-1 font-bold">
+
+                <div className="text-[#2FC18B] text-base flex items-center gap-1 font-bold whitespace-nowrap">
                   <span>Join</span>
-                  <ArrowRight size={18} strokeWidth={3} />
+                  <ArrowRight size={22} />
                 </div>
               </div>
             </a>

@@ -43,7 +43,7 @@ export default function NeetFeatureGrid() {
         Let’s <span className="text-[#2FC18B]">Start.</span>
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-6 w-full max-w-7xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4  gap-6 w-full max-w-7xl">
         {features.map((item, index) => (
           <div
             key={index}
@@ -59,14 +59,14 @@ export default function NeetFeatureGrid() {
             </div>
 
             {/* Title + Button */}
-            <div className="flex items-center justify-between">
-              <h2 className="text-sm sm:text-lg font-bold text-white leading-snug">
+            <div className="flex sm:flex-col md:flex-row md:items-center justify-between">
+              <h2 className="text-lg md:text-xl text-left font-bold text-white mb-2 md:w-[50%]">
                 {item.title}
               </h2>
 
               <a
                 href={item.link || "#"}
-                className="text-[#2FC18B] text-sm sm:text-base flex items-center gap-1 font-bold whitespace-nowrap"
+                className="text-[#2FC18B] text-base flex items-center gap-1 font-bold whitespace-nowrap"
               >
                 <span>Join</span>
                 <ArrowRight size={22} />

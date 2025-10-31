@@ -16,9 +16,9 @@ function TestCard({ test, type }) {
 
                 <div
                     onClick={() => setIsOpen(!isOpen)}
-                    className="flex flex-row text-center  sm:text-left justify-between items-center cursor-pointer gap-10"
+                    className="flex  flex-col sm:flex-row text-center  sm:text-left justify-between items-center cursor-pointer gap-10"
                 >
-                    <h3 className="text-lg sm:text-xl font-extrabold text-white bg-[#304a73] rounded-full w-10 h-10 flex items-center justify-center">
+                    <h3 className="text-lg sm:text-xl font-extrabold text-white bg-[#304a73] rounded-full px-3 py-1 flex items-center justify-center">
                         {test.id}
                     </h3>
                     <h3 className="text-xl sm:text-xl font-extrabold text-white w-full">
@@ -31,9 +31,9 @@ function TestCard({ test, type }) {
 
 
                 {isOpen && (
-                    <div className="flex text-center sm:text-left flex-col sm:flex-row justify-between items-center ml-0 sm:ml-20" >
+                    <div className="flex text-center sm:text-left flex-col md:flex-row justify-between items-center ml-0 md:ml-20" >
                         <div>  <h3 className="text-[15px] text-[#7B8EAC] font-semibold mt-3">{test.name}</h3>
-                            <div className="text-[#7B8EAC] pt-3  text-[15px] sm:text-[16px] flex flex-wrap justify-center md:justify-start gap-4">
+                            <div className="text-[#7B8EAC] pt-3 flex flex-wrap justify-center md:justify-start gap-4">
 
                                 <span className="flex items-center gap-1">
                                     <img
@@ -62,7 +62,7 @@ function TestCard({ test, type }) {
                             </div>
                         </div>
 
-                        <div className="w-full md:w-[25%] mt-3">
+                        <div className="w-full md:w-[25%] mt-5 text-center ">
                             {test.status === "Available" ? (
                                 <button className="cursor-pointer border-1 border-[#2fc18b] bg-[#2fc18b] px-4 py-1 rounded-lg font-bold">
                                     Attempt Now
@@ -78,8 +78,6 @@ function TestCard({ test, type }) {
             </div>
         );
     }
-
-
 
     return (
         <div className="bg-[#1b283d] p-6 sm:py-8 flex flex-col md:flex-row items-center justify-center gap-10 text-center md:text-left">
@@ -137,7 +135,7 @@ function TestCard({ test, type }) {
             </div>
 
 
-            <div className="w-full md:w-[15%]">
+            <div className="w-full md:w-[30%]">
                 {test.status === "Available" ? (
                     <button className="cursor-pointer border-1 border-[#2fc18b] bg-[#2fc18b] px-6 py-2 rounded-lg font-bold">
                         Attempt Now
@@ -154,7 +152,7 @@ function TestCard({ test, type }) {
 }
 
 
-export default function TestSeriesPapersets4() {
+export default function TestSeriesPapersets2() {
     const [activeMainTab, setActiveMainTab] = useState("chapterWise");
     const [activesubject, setActiveSubject] = useState("mathematics");
 
