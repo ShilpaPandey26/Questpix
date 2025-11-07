@@ -64,49 +64,72 @@ function ClassCard() {
 
           {isOpen ? <ChevronUp size={20} strokeWidth={4} /> : <ChevronDown size={20} strokeWidth={4} />} </span> </div>
 
-      {isOpen && (<div className="bg-[#293c5a] mb-3 mt-4 p-5 flex flex-col lg:flex-row justify-between items-center gap-6 rounded-xl">
-        {/* 1 */}
-        <div className="flex justify-between lg:w-[30%] ">
-          <div className="flex flex-col gap-2 ">
-            <div className="flex gap-5 font-bold ">
-              <h2 className="flex gap-1 items-center">
-                <img src={sub} alt="subject" className="h-5" />Subjects </h2>
-              <h2 className="flex items-center gap-1">MATHEMATICS <img src={pdf} alt="pdf" className="h-5" /> </h2>
+      {isOpen && (
+        <div className="bg-[#293c5a] mb-3 mt-4 p-3 flex flex-col lg:flex-row justify-between items-center gap-6 rounded-xl">
+          {/* 1 */}
+          <div className="flex justify-between w-full lg:w-[30%]   ">
+            <div className="flex flex-col mx-auto md:mx-0  gap-2 ">
+              <div className="flex flex-wrap gap-3 sm:gap-10 font-bold ">
+                <h2 className="flex  gap-1 items-center">
+                  <img src={sub} alt="subject" className="h-5" />Subjects </h2>
+                <h2 className="flex items-center gap-1">MATHEMATICS <img src={pdf} alt="pdf" className="h-5" /> </h2>
+              </div>
+              <h2 className="flex items-center gap-1 font-bold">
+                <img src={topic} alt="topic" className="h-5" />Chapter</h2>
+              <p className="text-[#7B8EAC] px-4">COMPOUND ANGLE(General )</p>
+              <p className="text-[#7B8EAC] px-4 flex items-center gap-1">
+                <img src={time} alt="time" /> 23:19:00 - 23:52:00</p>
             </div>
-            <h2 className="flex items-center gap-1 font-bold">
-              <img src={topic} alt="topic" className="h-5" />Chapter</h2>
-            <p className="text-[#7B8EAC] px-4">COMPOUND ANGLE(General )</p>
-            <p className="text-[#7B8EAC] px-4 flex items-center gap-1">
-              <img src={time} alt="time" /> 23:19:00 - 23:52:00</p>
-          </div> 
-          <div className="border border-[#B5D4FF] hidden lg:block"></div>
-        </div>
+            <div className="border-1 border-dashed border-[#B5D4FF] hidden lg:block h-[200px]"></div>
+          </div>
 
-        {/* 2 */}
-        <div className="flex justify-between lg:w-[35%]">
-          <div>
-            <h2 className="text-center text-xl font-bold mb-2">VIJAY KUMAR SHARMA</h2>
-            <div className="flex flex-col sm:flex-row items-center gap-5 mr-5">
-              <img src={vijaysir} alt="vijay sir" className="h-28" />
-              <p className="text-[#7B8EAC]">Vijay sir takes creative approach to helping students to overcome the intellectual amd emotional challenges in JEE. He has experience of more than 20 Years in teaching for JEE</p>
+          {/* 2 */}
+          <div className="flex flex-col sm:flex-row justify-between  w-full  gap-6 lg:w-[40%] ">
+            <div className="flex flex-col-reverse sm:flex-row gap-5 items-center">
+              <div>
+                <img src={vijaysir} alt="vijay sir" className="h-36 lg:mt-6 mt-0" />
+              </div>
+              <div className="flex flex-col  w-[80%]">
+                <h2 className="text-center sm:text-left text-lg  font-bold mb-2 ">VIJAY KUMAR SHARMA</h2>
+                <p className="text-[#7B8EAC] text-center sm:text-left">Vijay sir takes creative approach to helping students to overcome the intellectual amd emotional challenges in JEE. He has experience of more than 20 Years in teaching for JEE</p>
+              </div>
             </div>
-          </div>
-          <div className="border border-[#B5D4FF] hidden lg:block"></div>
-        </div>
 
-        {/* 3 */}
-        <div className="flex gap-6 flex-col md:flex-row items-center justify-between lg:w-[35%]">
-          <div>
-            <button className="font-semibold px-4 py-2 bg-[#007bff] cursor-pointer rounded-lg hover:bg-[#0056b3] hover:scale-[1.02] transition-all mt-5">Watch Recorded</button>
+            <div className="border-1 border-dashed border-[#B5D4FF] hidden lg:block"></div>
           </div>
-          <div className="flex items-center justify-center flex-wrap gap-6 lg:w-[40%] mt-5">
-            <h2><img src={notes} alt="notes" className="h-8" />Notes</h2>
-            <h2><img src={question} alt="question" className="h-8" />Doubts</h2>
-            <h2><img src={notes} alt="notes" className="h-8" />DPP</h2>
-            <h2><img src={practice} alt="practice" className="h-8" />Practice</h2>
+
+          {/* 3 */}
+          <div className="flex flex-col md:flex-row  items-center  gap-6 w-full  lg:w-[30%]">
+            <div className="w-full flex justify-center md:justify-start ">
+              <button className="font-semibold  bg-[#007bff]  px-4 py-2 cursor-pointer rounded-lg hover:bg-[#0056b3] hover:scale-[1.02] transition-all">
+                Watch Recorded
+              </button>
+            </div>
+
+
+
+            <div className="grid grid-cols-2 gap-5 w-[70%] " >
+              <h2 className="flex flex-col items-center">
+                <img src={notes} alt="notes" className="h-8" /> Notes
+              </h2>
+              <h2 className="flex flex-col items-center">
+                <img src={question} alt="question" className="h-8" /> Doubts
+              </h2>
+              <h2 className="flex flex-col items-center">
+                <img src={notes} alt="notes" className="h-8" /> DPP
+              </h2>
+              <h2 className="flex flex-col items-center">
+                <img src={practice} alt="practice" className="h-8" /> Practice
+              </h2>
+            </div>
+
+
+
+
+
+
           </div>
         </div>
-      </div>
       )}
     </div>
   )
